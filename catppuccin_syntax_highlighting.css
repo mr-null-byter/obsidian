@@ -1,0 +1,138 @@
+/*
+Catppuccin Macchiato Syntax Highlighting for Obsidian
+Applies to BOTH Editor (CodeMirror 6) and Reading (PrismJS) modes
+*/
+
+/* --- General code block styling --- */
+.markdown-preview-view code,
+.markdown-preview-view pre,
+.cm-s-obsidian pre.HyperMD-codeblock {
+    background: #24273a !important;
+    font-size: 14px;
+    white-space: pre;
+    color: #cad3f5;
+    border-radius: 0.5rem;
+}
+
+/* ========================================================= */
+/* === Reading Mode (PrismJS tokens) ======================= */
+/* ========================================================= */
+
+.markdown-preview-view .token.comment,
+.markdown-preview-view .token.prolog,
+.markdown-preview-view .token.doctype,
+.markdown-preview-view .token.cdata {
+    color: #6e738d;
+}
+
+.markdown-preview-view .token.function {
+    color: #8aadf4;
+}
+
+.markdown-preview-view .token.keyword,
+.markdown-preview-view .token.important {
+    color: #c6a0f6;
+}
+
+.markdown-preview-view .token.operator,
+.markdown-preview-view .token.arrow {
+    color: #8bd5ca;
+}
+
+.markdown-preview-view .token.property,
+.markdown-preview-view .token.tag,
+.markdown-preview-view .token.selector {
+    color: #8aadf4;
+}
+
+.markdown-preview-view .token.punctuation {
+    color: #939ab7;
+}
+
+.markdown-preview-view .token.string {
+    color: #a6da95;
+}
+
+.markdown-preview-view .token.value,
+.markdown-preview-view .token.builtin {
+    color: #f5a97f;
+}
+
+.markdown-preview-view .token.class-name {
+    color: #eed49f;
+}
+
+.markdown-preview-view .token.parameter {
+    color: #ee99a0;
+}
+
+.markdown-preview-view .token.unit {
+    color: #c6a0f6;
+}
+
+.markdown-preview-view .token.console,
+.markdown-preview-view .token.hexcode {
+    color: #cad3f5;
+}
+
+/* Extra: modules & namespaces (Python imports like scipy.stats) */
+.markdown-preview-view .token.namespace,
+.markdown-preview-view .token.module,
+.markdown-preview-view .token.attr-name {
+    color: #eed49f;
+    /* yellow */
+}
+
+/* ========================================================= */
+/* === Editing Mode (CodeMirror 6 classes) ================= */
+/* ========================================================= */
+
+.cm-s-obsidian .cm-comment {
+    color: #6e738d;
+}
+
+.cm-s-obsidian .cm-keyword {
+    color: #c6a0f6;
+}
+
+.cm-s-obsidian .cm-string {
+    color: #a6da95;
+}
+
+.cm-s-obsidian .cm-variable,
+.cm-s-obsidian .cm-variable-2 {
+    color: #eed49f;
+    /* variables, module names */
+}
+
+.cm-s-obsidian .cm-variable-3,
+.cm-s-obsidian .cm-type {
+    color: #8aadf4;
+    /* types, class names */
+}
+
+.cm-s-obsidian .cm-builtin {
+    color: #f5a97f;
+}
+
+.cm-s-obsidian .cm-number {
+    color: #f5a97f;
+}
+
+.cm-s-obsidian .cm-operator {
+    color: #8bd5ca;
+}
+
+.cm-s-obsidian .cm-def {
+    color: #8aadf4;
+    /* function definitions */
+}
+
+.cm-s-obsidian .cm-property {
+    color: #8aadf4;
+}
+
+.cm-s-obsidian .cm-attribute {
+    color: #eed49f;
+    /* attributes */
+}
