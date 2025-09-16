@@ -1,0 +1,267 @@
+{
+  "main": {
+    "id": "8a477d46f57c1bfe",
+    "type": "split",
+    "children": [
+      {
+        "id": "34e40d4bd1f2555c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c104ba3d9909966d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
+          },
+          {
+            "id": "d8f325f308de5410",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 Research/Statistics/Approaches to Sampling Probability Distributions.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Approaches to Sampling Probability Distributions"
+            }
+          },
+          {
+            "id": "8a3757f4ebd67bbf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 Research/Statistics/Normal Distribution Properties.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Normal Distribution Properties"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8466fad8e8b90de7",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ef373f060c828b3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69503498655f5fb5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c89f2099a9379ff3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7b958f4814b2801c",
+    "type": "split",
+    "children": [
+      {
+        "id": "7da464638328aa1d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9735176416e197ba",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04 Work/Task Manager/Tasks.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Tasks"
+            }
+          },
+          {
+            "id": "782072e5ca2c3357",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "empty",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "e3de1d2a86f855fd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "f3e10cdc9768f6c7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "8284ac32e93fb5b9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "a80c3ebfdf5f5459",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 509.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "bases:Create new base": false,
+      "omnisearch:Omnisearch": false,
+      "daily-notes:Open today's daily note": false
+    }
+  },
+  "active": "c104ba3d9909966d",
+  "lastOpenFiles": [
+    "02 Research/Statistics/Approaches to Sampling Probability Distributions.md",
+    "Untitled.md",
+    "02 Research/Statistics/Normal Distribution Properties.md",
+    "00 Inbox/_empty notes.md",
+    "04 Work/Task Manager/Tasks.md",
+    "04 Work/Task Manager/0. Inbox.md",
+    "04 Work/Task Manager/Logbook.md",
+    "04 Work/Task Manager/1. Today.md",
+    "04 Work/Task Manager/Tasks by Project.md",
+    "04 Work/Task Manager/2. Upcoming.md",
+    "03 Resources/_daily_notes/2025-09-12.md",
+    "03 Resources/_daily_notes/2025-09-15.md",
+    "03 Resources/_daily_notes/_daily_note_script.md",
+    "03 Resources/_assets/Screenshot 2025-09-15 at 6.36.59 PM.png",
+    "03 Resources/_assets/Screenshot_2025-08-08_at_3.38.38 PM_1754681922179_0.png",
+    "03 Resources/_assets/Screenshot_2025-08-08_at_3.39.35 PM_1754681980326_0.png",
+    "03 Resources/_assets/Screenshot_2025-08-08_at_3.40.50 PM_1754682055856_0.png",
+    "03 Resources/_assets/Screenshot_2025-08-11_at_4.29.06 PM_1754944148170_0.png",
+    "03 Resources/_assets/Screenshot_2025-09-11_at_2.31.43 PM_1757615508006_0.png",
+    "03 Resources/_assets/image_1755282682434_0.png",
+    "02 Research/Statistics/Common Classification Metrics.md",
+    "04 Work/Task Manager/4. Someday.md",
+    "04 Work/Task Manager/3. Anytime.md",
+    "02 Research/Statistics/Dirichlet Processes.md",
+    "02 Research/Statistics/Dirichlet Process Mixture Models.md",
+    "03 Resources/_daily_notes/2025-09-13.md",
+    "04 Work/Goal Setting/2024 Goals.md",
+    "04 Work/Goal Setting",
+    "Bayesian Structure Discovery.md",
+    "01 Projects/eXVi/Program Overview.md",
+    "01 Projects/Ace/Program Overview.md",
+    "01 Projects/Atomata/09042025 Intro Meeting.md",
+    "01 Projects/Sugar/Program Overview.md",
+    "01 Projects/Scify/Automated Algorithms for Detecting Convergence in MCMC.md",
+    "Untitled",
+    "04 Work/Task Manager",
+    "03 Resources/_daily_notes",
+    "Untitled.base",
+    "Untitled.canvas",
+    "03 Resources/_canvas",
+    "03 Resources/_assets/New_STR_Policy_Acknowledgements_Assigned_1743433066148_0.eml",
+    "03 Resources/_assets/Screenshot_2025-08-08_at_1.50.04 PM_1754675424999_0.png",
+    "03 Resources/_assets",
+    "00 Assets",
+    "01 Projects/Sugar"
+  ]
+}

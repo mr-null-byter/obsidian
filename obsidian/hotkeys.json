@@ -1,0 +1,421 @@
+{
+  "editor:insert-link": [],
+  "editor:delete-paragraph": [],
+  "workspace:goto-last-tab": [],
+  "workspace:previous-tab": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "Tab"
+    }
+  ],
+  "editor:swap-line-down": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "ArrowDown"
+    }
+  ],
+  "editor:swap-line-up": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "ArrowUp"
+    }
+  ],
+  "editor:unfold-all": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "0"
+    }
+  ],
+  "editor:fold-all": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "0"
+    }
+  ],
+  "workspace:copy-url": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "C"
+    }
+  ],
+  "file-explorer:open": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "\\"
+    }
+  ],
+  "workspace:next-tab": [],
+  "graph:open": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "G"
+    }
+  ],
+  "workspace:goto-tab-1": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "1"
+    }
+  ],
+  "workspace:goto-tab-2": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "2"
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "2"
+    }
+  ],
+  "workspace:goto-tab-3": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "3"
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "3"
+    }
+  ],
+  "workspace:goto-tab-4": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "4"
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "4"
+    }
+  ],
+  "workspace:goto-tab-5": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "5"
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "5"
+    }
+  ],
+  "workspace:goto-tab-6": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "6"
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "6"
+    }
+  ],
+  "workspace:goto-tab-7": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "7"
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "7"
+    }
+  ],
+  "workspace:goto-tab-8": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "8"
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "8"
+    }
+  ],
+  "editor:attach-file": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "I"
+    }
+  ],
+  "workspace:split-vertical": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "K"
+    }
+  ],
+  "multi-column-markdown:insert-multi-column-region": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ],
+  "markdown:add-metadata-property": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": ";"
+    }
+  ],
+  "markdown:edit-metadata-property": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": ";"
+    }
+  ],
+  "editor:toggle-source": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "E"
+    }
+  ],
+  "editor:open-search-replace": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "F"
+    }
+  ],
+  "editor:open-search": [],
+  "table-editor-obsidian:format-all-tables": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "Tab"
+    }
+  ],
+  "command-palette:open": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ],
+  "file-explorer:move-file": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "M"
+    }
+  ],
+  "app:reload": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "R"
+    }
+  ],
+  "workspace:edit-file-title": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "R"
+    }
+  ],
+  "global-search:open": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "F"
+    }
+  ],
+  "omnisearch:show-modal": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "F"
+    }
+  ],
+  "workspace:split-horizontal": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "J"
+    }
+  ],
+  "file-explorer:new-folder": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "N"
+    }
+  ],
+  "file-explorer:new-file-in-new-pane": [],
+  "editor:fold-less": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "="
+    }
+  ],
+  "editor:fold-more": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "-"
+    }
+  ],
+  "open-with-default-app:open": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "S"
+    }
+  ],
+  "auto-card-link:auto-card-link-enhance-selected-url": [],
+  "auto-card-link:auto-card-link-paste-and-enhance": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "V"
+    }
+  ],
+  "app:toggle-left-sidebar": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "`"
+    }
+  ],
+  "obsidian-projects:show-projects": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "P"
+    }
+  ],
+  "app:go-back": [
+    {
+      "modifiers": [
+        "Mod",
+        "Alt"
+      ],
+      "key": "ArrowLeft"
+    },
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "["
+    }
+  ],
+  "app:go-forward": [
+    {
+      "modifiers": [
+        "Mod",
+        "Alt"
+      ],
+      "key": "ArrowRight"
+    },
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "]"
+    }
+  ],
+  "app:toggle-right-sidebar": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "`"
+    }
+  ],
+  "daily-notes": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "D"
+    }
+  ],
+  "table-editor-obsidian:table-control-bar": [],
+  "obsidian-hotkeys-for-specific-files:03 Resources/_daily_notes/_daily_note_script.md-new-tab": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "D"
+    }
+  ]
+}
