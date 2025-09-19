@@ -17,11 +17,14 @@
 .workspace-tab-header {
   font-size-adjust: 0.67;
   border-radius: 6px !important;
+  background: #181818 !important;
+
 }
 
 .workspace-tab-header.is-active,
 .workspace-tab-header:hover {
   background: #181818 !important;
+
 }
 
 .view-header-title-container.mod-at-start.mod-fade:hover {
@@ -58,6 +61,13 @@ ol li {
   &::backdrop {
     animation: fadeIn 400ms ease both;
   }
+}
+
+/* Center images with `| center` */
+img[alt*="center"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ==================================== */
