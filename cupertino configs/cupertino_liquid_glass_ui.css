@@ -8,7 +8,10 @@ body {
     --liquid-glass-border-radius: 20px;
     --liquid-glass-shadow:
         0 0 20px var(--liquid-glass-bg),
-        inset 0 0 2px var(--liquid-glass-border);
+        inset 0 0 5px var(--liquid-glass-border);
+    --liquid-glass-shadow-tab:
+        0 0 20px var(--liquid-glass-bg),
+        inset 0 0 50px var(--liquid-glass-border);
 }
 
 /* ================== apply Liquid Glass to sidebars ================== */
@@ -37,7 +40,7 @@ body {
 .workspace-tab-header:hover {
     background: var(--liquid-glass-bg-darker) !important;
     border: 1px solid var(--liquid-glass-border) !important;
-    box-shadow: var(--liquid-glass-shadow) !important;
+    box-shadow: var(--liquid-glass-shadow-tab) !important;
 }
 
 /* =============== apply Liquid Glass to tabs DONE =============== */
