@@ -5,6 +5,7 @@ body {
     --liquid-glass-bg: hsl(0, 0%, var(--main-gray-frac));
     --liquid-glass-bg-darker: hsl(0, 0%, calc(var(--main-gray-frac) - 5%));
     --liquid-glass-border: hsl(0, 0%, 22%);
+    --liquid-glass-border-radius: 20px;
     --liquid-glass-shadow:
         0 0 20px var(--liquid-glass-bg),
         inset 0 0 2px var(--liquid-glass-border);
@@ -17,7 +18,7 @@ body {
 .is-mobile .workspace-drawer.mod-right {
     background: var(--liquid-glass-bg);
     border: 1px solid var(--liquid-glass-border);
-    border-radius: 20px;
+    border-radius: var(--liquid-glass-border-radius);
     box-shadow: var(--liquid-glass-shadow);
     backdrop-filter: blur(14px) saturate(180%);
     -webkit-backdrop-filter: blur(14px) saturate(180%);
