@@ -1,0 +1,70 @@
+/* =================================================================== */
+/* This CSS is meant for all styling changes that are theme invariant. */
+/* Do NOT add styles that are in any way dependent on a given theme.   */
+/* Changing the theme should not break anything specified here.         */
+/* =================================================================== */
+
+/* variable declarations */
+:root {
+    --opacity-transition-duration: 0.2s;
+}
+
+/* ===================== styling note breadcrumbs ===================== */
+.view-header-title-container.mod-at-start.mod-fade {
+    opacity: 0.3 ! important;
+    display: flex ! important;
+    transition: opacity var(--opacity-transition-duration) ease-in-out;
+}
+
+.view-header-title-container.mod-at-start.mod-fade:hover {
+    opacity: 1 !important;
+}
+
+/* =================== styling note breadcrumbs DONE =================== */
+
+/* ===================== increase LaTex font size ===================== */
+.MathJax {
+    font-size: 1.1rem;
+}
+
+/* ===================== styling enumerated lists ===================== */
+ol li {
+    margin: 0px 20px;
+}
+
+/* ===================== styling mermaid diagrams ===================== */
+.mermaid {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* ===================== blur main background open ===================== */
+.modal-container {
+    backdrop-filter: blur(5px);
+}
+
+/* =========================== image styling =========================== */
+/* center with `| center` (must be first arg) */
+img[alt*="center"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* dim image with shadows */
+img {
+    opacity: 0.8;
+    transition: opacity var(--opacity-transition-duration) ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* brighten on hover */
+img:hover {
+    opacity: 1;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    transition: opacity var(--opacity-transition-duration) ease-in-out;
+}
+
+/* ======================== image styling DONE ======================== */
