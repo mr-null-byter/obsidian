@@ -6,16 +6,34 @@
 body {
     --font-text-theme: SN Pro;
     --font-interface-theme: SN Pro;
+    --main-gray-frac: 6%;
     --formatted-text-color: #fab387;
     --default-text-color: #e5e5e7;
     --bold-color: var(--formatted-text-color);
     --italic-color: var(--formatted-text-color);
     --inline-title-color: var(--default-text-color);
-    --text-normal: var(--default-text-color) !important;
+    --text-normal: var(--default-text-color);
+    --h1-color: var(--default-text-color);
+    --h2-color: var(--default-text-color);
+    --h3-color: var(--default-text-color);
+    --h4-color: var(--default-text-color);
+    --h5-color: var(--default-text-color);
+    --h6-color: var(--default-text-color);
 }
 
-/* change default text color */
+/* change default text colors */
 .theme-dark .markdown-reading-view,
 .theme-dark .markdown-reading-view {
-    --text-normal: var(--default-text-color) !important;
+    --text-normal: var(--default-text-color);
+    --h1-color: var(--default-text-color);
+    --h2-color: var(--default-text-color);
+    --h3-color: var(--default-text-color);
+    --h4-color: var(--default-text-color);
+    --h5-color: var(--default-text-color);
+    --h6-color: var(--default-text-color);
+}
+
+.theme-dark {
+    --background-primary: hsl(0, 0%, var(--main-gray-frac));
+    --background-secondary: hsl(0, 0%, var(--main-gray-frac));
 }
