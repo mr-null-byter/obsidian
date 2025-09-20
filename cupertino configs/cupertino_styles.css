@@ -1,8 +1,12 @@
+/* ================================================================ */
+/* These styling changes are EXCLUSIVELY for the Cupertino theme.   */
+/* ================================================================ */
+
+
 body {
     --font-text-theme: SN Pro;
     --font-interface-theme: SN Pro;
-    --opacity-transition-duration: 0.2s;
-    --formatted-text-color: #FAB387;
+    --formatted-text-color: #fab387;
     --default-text-color: #e5e5e7;
     --bold-color: var(--formatted-text-color);
     --italic-color: var(--formatted-text-color);
@@ -10,61 +14,8 @@ body {
     --text-normal: var(--default-text-color) !important;
 }
 
-
+/* change default text color */
 .theme-dark .markdown-reading-view,
 .theme-dark .markdown-reading-view {
     --text-normal: var(--default-text-color) !important;
-}
-
-/* style note breadcrumbs */
-.view-header-title-container.mod-at-start.mod-fade {
-    opacity: 0.5 ! important;
-    display: flex ! important;
-    transition: opacity var(--opacity-transition-duration) ease-in-out;
-}
-
-.view-header-title-container.mod-at-start.mod-fade:hover {
-    opacity: 1 !important;
-}
-
-/* increase LaTex font size */
-.MathJax {
-    font-size: 1.1rem;
-}
-
-/* styling enumerated lists */
-ol li {
-    margin: 0px 20px;
-}
-
-/* styling mermaid diagrams */
-.mermaid {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-
-/* blur the background when opening command palette */
-.modal-container {
-    backdrop-filter: blur(5px);
-}
-
-/* Center images with `| center` */
-img[alt*="center"] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-img {
-    opacity: 0.8;
-    transition: opacity var(--opacity-transition-duration) ease-in-out;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-}
-
-img:hover {
-    opacity: 1;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
-    transition: opacity var(--opacity-transition-duration) ease-in-out;
 }

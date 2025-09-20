@@ -1,24 +1,9 @@
-/* ============================================================ */
-/* These are misc. style changes that I have applied over time. */
-/*        These are EXCLUSIVELY for the AnuPpuccin theme        */
-/* ============================================================ */
+/* ================================================================ */
+/* These styling changes are EXCLUSIVELY for the AnuPpuccin theme.  */
+/* ================================================================ */
 
-:root {
-  --opacity-transition-duration: 0.2s;
-}
 
-.markdown-preview-view.is-readable-line-width {
-  padding-inline: 30px;
-}
-
-/* style note breadcrumbs */
-.view-header-title-container.mod-at-start.mod-fade {
-  opacity: 0.3 ! important;
-  display: flex ! important;
-  transition: opacity var(--opacity-transition-duration) ease-in-out;
-}
-
-/* style note tab */
+/* ======================= styling note tabs ======================= */
 .workspace-tab-header {
   font-size-adjust: 0.67;
   border-radius: 6px !important;
@@ -26,38 +11,7 @@
 
 }
 
-.workspace-tab-header.is-active,
-.workspace-tab-header:hover {
-  background: #181818 !important;
-
-}
-
-.view-header-title-container.mod-at-start.mod-fade:hover {
-  opacity: 1 !important;
-}
-
-/* increase LaTex font size */
-.MathJax {
-  font-size: 1.1rem;
-}
-
-/* styling enumerated lists */
-ol li {
-  margin: 0px 20px;
-}
-
-/* styling mermaid diagrams */
-.mermaid {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-}
-
-/* blur the background when opening command palette */
-.modal-container {
-  backdrop-filter: blur(5px);
-}
-
+/* ======= soft transition when opening/closing command palette ======= */
 .prompt,
 .modal,
 .vertical-tabs-container {
@@ -67,34 +21,3 @@ ol li {
     animation: fadeIn 400ms ease both;
   }
 }
-
-/* Center images with `| center` */
-img[alt*="center"] {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-img {
-  opacity: 0.8;
-  transition: opacity var(--opacity-transition-duration) ease-in-out;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px #181818;
-}
-
-img:hover {
-  opacity: 1;
-  transition: opacity var(--opacity-transition-duration) ease-in-out;
-}
-
-/* ==================================== */
-/* ============ DEPRECATED ============ */
-/* ==================================== */
-
-/* .cm-s-obsidian span.cm-inline-code {
-  font-size: 14px;
-} */
-
-/* .markdown-preview-view code {
-  font-size: 14px;
-} */
