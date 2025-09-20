@@ -8,7 +8,7 @@ body {
     --font-interface-theme: SN Pro;
     --main-gray-frac: 6%;
     --formatted-text-color: #fab387;
-    --default-text-color: #e5e5e7;
+    --default-text-color: hsl(0, 0%, 90%);
     --bold-color: var(--formatted-text-color);
     --italic-color: var(--formatted-text-color);
     --inline-title-color: var(--default-text-color);
