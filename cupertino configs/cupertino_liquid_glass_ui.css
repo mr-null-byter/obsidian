@@ -44,3 +44,9 @@ body {
 }
 
 /* =============== apply Liquid Glass to tabs DONE =============== */
+
+/* ================ apply Liquid Glass to palette ================ */
+div.prompt {
+  border: 1px solid var(--liquid-glass-border) !important;
+  box-shadow: var(--liquid-glass-shadow) !important;
+}
