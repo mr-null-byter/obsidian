@@ -41,7 +41,7 @@ ol li {
 
 /* ===================== blur main background open ===================== */
 .modal-container {
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
 }
 
 /* =========================== image styling =========================== */
