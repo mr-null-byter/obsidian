@@ -11,7 +11,7 @@ body {
         inset 0 0 5px var(--liquid-glass-border);  
     
   /* tab variables */
-    --liquid-glass-border-tab: hsl(0, 0%, 22%);
+    --liquid-glass-border-tab: hsla(0, 0%, 22%, 0.8);
     --liquid-glass-shadow-tab:
         0 0 20px var(--liquid-glass-bg),
         inset 0 0 50px var(--liquid-glass-border-tab);
