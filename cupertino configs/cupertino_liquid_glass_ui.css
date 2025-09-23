@@ -2,16 +2,19 @@
 
 /* variable declarations */
 body {
-    --liquid-glass-bg: hsl(0, 0%, var(--main-gray-frac));
-    --liquid-glass-bg-darker: hsl(0, 0%, calc(var(--main-gray-frac) - 5%));
-    --liquid-glass-border: hsl(0, 0%, 22%);
+    --liquid-glass-bg: hsl(0, 0%, var(--primary-gray-frac));
+    --liquid-glass-bg-darker: hsl(0, 0%, calc(var(--primary-gray-frac) - 5%));
+    --liquid-glass-border: hsla(0, 0%, 22%, 0.35);
     --liquid-glass-border-radius: 20px;
     --liquid-glass-shadow:
         0 0 20px var(--liquid-glass-bg),
-        inset 0 0 5px var(--liquid-glass-border);
+        inset 0 0 5px var(--liquid-glass-border);  
+    
+  /* tab variables */
+    --liquid-glass-border-tab: hsl(0, 0%, 22%);
     --liquid-glass-shadow-tab:
         0 0 20px var(--liquid-glass-bg),
-        inset 0 0 50px var(--liquid-glass-border);
+        inset 0 0 50px var(--liquid-glass-border-tab);
 }
 
 /* ================== apply Liquid Glass to sidebars ================== */
@@ -39,7 +42,7 @@ body {
 .workspace-tab-header.is-active,
 .workspace-tab-header:hover {
     background: var(--liquid-glass-bg-darker) !important;
-    border: 1px solid var(--liquid-glass-border) !important;
+    border: 1px solid var(--liquid-glass-border-tab) !important;
     box-shadow: var(--liquid-glass-shadow-tab) !important;
 }
 
@@ -47,6 +50,6 @@ body {
 
 /* ================ apply Liquid Glass to palette ================ */
 div.prompt {
-  border: 1px solid var(--liquid-glass-border) !important;
+  border: 1px solid var(--liquid-glass-border-tab) !important;
   box-shadow: var(--liquid-glass-shadow) !important;
 }
