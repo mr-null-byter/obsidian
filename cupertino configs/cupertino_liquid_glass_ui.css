@@ -34,6 +34,12 @@ body {
     max-width: 80vw;
 }
 
+/* ================ apply Liquid Glass to palette ================ */
+div.prompt {
+  border: 1px solid var(--liquid-glass-border) !important;
+  box-shadow: var(--liquid-glass-shadow) !important;
+}
+
 /* ================== apply Liquid Glass to tabs ================== */
 .workspace-tab-header {
     background: var(--liquid-glass-bg-darker) !important;
@@ -47,9 +53,3 @@ body {
 }
 
 /* =============== apply Liquid Glass to tabs DONE =============== */
-
-/* ================ apply Liquid Glass to palette ================ */
-div.prompt {
-  border: 1px solid var(--liquid-glass-border-tab) !important;
-  box-shadow: var(--liquid-glass-shadow) !important;
-}
