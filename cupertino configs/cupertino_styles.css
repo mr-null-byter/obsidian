@@ -6,7 +6,8 @@
 body {
     --font-text-theme: SN Pro;
     --font-interface-theme: SN Pro;
-    --main-gray-frac: 6%;
+    --primary-gray-frac: 6%;
+    --secondary-gray-frac: 8%;
     --formatted-text-color: hsl(23, 50%, 55%);
     --default-text-color: hsl(0, 0%, 80%);
     --bold-color: var(--formatted-text-color);
@@ -34,8 +35,8 @@ body {
 }
 
 .theme-dark {
-    --background-primary: hsl(0, 0%, var(--main-gray-frac));
-    --background-secondary: hsl(0, 0%, var(--main-gray-frac));
+    --background-primary: hsl(0, 0%, var(--primary-gray-frac));
+    --background-secondary: hsl(0, 0%, var(--secondary-gray-frac));
 }
 
 /* ==================== fix SN Pro ligature ====================  */
