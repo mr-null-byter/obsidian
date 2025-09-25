@@ -5,7 +5,7 @@ body {
     --liquid-glass-bg: hsl(0, 0%, var(--primary-gray-frac));
     --liquid-glass-bg-darker: hsl(0, 0%, calc(var(--primary-gray-frac) - 5%));
     --liquid-glass-border: hsla(0, 0%, 22%, 0.35);
-    --liquid-glass-border-radius: 20px;
+    --liquid-glass-border-radius: 25px;
     --liquid-glass-shadow:
         0 0 20px var(--liquid-glass-bg),
         inset 0 0 5px var(--liquid-glass-border);  
@@ -30,7 +30,7 @@ body {
     -webkit-backdrop-filter: blur(14px) saturate(180%);
     overflow: hidden;
     margin: 33px 0 0 10px;
-    height: calc(100% - 42px);
+    height: calc(100% - 41px);
     max-width: 80vw;
 }
 
