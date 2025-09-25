@@ -15,6 +15,7 @@ customization. Just swap out the color variable names in the prefix groups.
 
 :root {
   /* ================================ Colors ================================ */
+  --folder-nav-font-size: 18px;
   --alpha: 0.9;
   --z0-color: rgba(135, 133, 128, var(--alpha));
   --z1-color: rgba(58, 169, 159, var(--alpha));
@@ -82,7 +83,7 @@ customization. Just swap out the color variable names in the prefix groups.
 }
 
 .nav-folder-title:hover {
-  font-size: 19px;
+  font-size: calc(var(--folder-nav-font-size) + 1px);
 }
 
 /* Narrower Padding on Desktop*/
@@ -94,7 +95,7 @@ customization. Just swap out the color variable names in the prefix groups.
     padding-right: 5px !important;
     padding-bottom: 10px !important;
     padding-left: 15px;
-    font-size: 16px;
+    font-size: var(--folder-nav-font-size);
   }
 }
 
