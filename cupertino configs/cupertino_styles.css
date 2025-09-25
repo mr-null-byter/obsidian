@@ -39,6 +39,12 @@ body {
     --background-secondary: hsl(0, 0%, var(--secondary-gray-frac));
 }
 
+/* ============ change out-of-focus side panel colors ============ */
+/* --color-base-20 is what the default theme uses, so change it */
+body:not(.is-tablet):not(.is-mobile) {
+    --color-base-20: var(--background-secondary) !important;
+}
+
 /* ==================== fix SN Pro ligature ====================  */
 /* github issue: https://github.com/aaaaalexis/obsidian-cupertino/issues/208#issuecomment-3314742412 */
 @media screen,
