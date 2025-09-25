@@ -78,7 +78,11 @@ customization. Just swap out the color variable names in the prefix groups.
 /* All Folder Titles */
 .nav-folder-title {
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 50px !important;
+}
+
+.nav-folder-title:hover {
+  font-size: 19px;
 }
 
 /* Narrower Padding on Desktop*/
