@@ -1,11 +1,20 @@
 /* --- Inline code styling --- */
-.markdown-preview-view code:not(pre code),
+/* .markdown-preview-view code:not(pre code),
 .cm-s-obsidian span.cm-inline-code {
     background: #2a2a2a !important;
     border: 1px solid #3A3A3C;
     border-radius: 4px;
     padding: 0.1em 0.25em;
     font-size: 14px;
+} */
+
+body:not(.is-tablet):not(.is-mobile) {
+    --code-font-size: 16px;
+}
+
+body.is-tablet,
+body.is-mobile {
+    --code-font-size: 18px;
 }
 
 /* --- Block code: Reading + Editing --- */
@@ -15,7 +24,7 @@
     border: 1px solid #313244 !important;
     border-radius: 6px;
     padding: 0.75em 1em;
-    font-size: 16px;
+    font-size: var(--code-font-size);
     box-shadow: inset 0 1px 0 #11111b,
         inset 0 -1px 0 #11111b;
 }
