@@ -37,7 +37,7 @@ body {
 /* --color-base-20 changes out-of-focus side panel colors */
 body:not(.is-tablet):not(.is-mobile) {
     --color-base-20: var(--background-secondary) !important;
-    --primary-gray-frac: 6%;
+    --primary-gray-frac: 8%;
 }
 
 .theme-dark {
@@ -47,8 +47,9 @@ body:not(.is-tablet):not(.is-mobile) {
 }
 
 /* ==================== fix SN Pro ligature ====================  */
+/* ====================== FIXED IN v2.5+ =======================  */
 /* github issue: https://github.com/aaaaalexis/obsidian-cupertino/issues/208#issuecomment-3314742412 */
-@media screen,
+/* @media screen,
 print {
 
     .markdown-reading-view,
@@ -66,4 +67,4 @@ print {
     .HyperMD-header-6 {
         letter-spacing: normal !important;
     }
-}
+} */
