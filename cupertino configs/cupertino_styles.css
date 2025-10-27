@@ -44,6 +44,11 @@ body:not(.is-tablet):not(.is-mobile) {
     --background-primary: hsl(0, 0%, var(--primary-gray-frac));
     --secondary-gray-frac: calc(var(--primary-gray-frac) + 2%);
     --background-secondary: hsl(0, 0%, var(--secondary-gray-frac));
+
+    /* Cupertino v2.5+ introduced mobile-specific colors */
+    --system-status-background: var(--background-primary) !important;
+    --mobile-sidebar-background: var(--background-secondary) !important;
+    --liquid-glass-background: hsl(0, 0%, calc(var(--primary-gray-frac) + 1%)) !important;
 }
 
 /* ==================== fix SN Pro ligature ====================  */
