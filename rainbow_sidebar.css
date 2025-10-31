@@ -13,6 +13,8 @@ customization. Just swap out the color variable names in the prefix groups.
 
 -------------------------------------------------------------------------------*/
 
+@import "cupertino_styles.css";
+
 :root {
     /* ====================== Defaults to mobile/tablet ====================== */
     --folder-nav-font-size: 18px;
@@ -28,7 +30,6 @@ customization. Just swap out the color variable names in the prefix groups.
     --z4-color: rgba(206, 93, 151, calc(var(--alpha) - 0.1));
     --z99-color: rgba(135, 133, 128, calc(var(--alpha) - 0.4));
 
-    --default-text-color: #e5e5e7;
     --highlight: #fff;
     --shadow: #0b0c2c;
     --nav-item-weight-hover: bold;
@@ -61,16 +62,30 @@ body:not(.is-tablet):not(.is-mobile) {
 .nav-folder-title {
     font-weight: bold;
     border-radius: var(--nav-folder-border-radius) !important;
+    padding: var(--nav-folder-padding) !important;
+    font-size: var(--folder-nav-font-size);
 }
 
 .nav-folder-title:hover {
+    font-weight: bold !important;
     font-size: calc(var(--folder-nav-font-size) + 1px);
 }
 
-.nav-file-title,
-.nav-folder-title {
+/* All File Titles */
+.nav-file-title {
     padding: var(--nav-folder-padding) !important;
     font-size: var(--folder-nav-font-size);
+    color: var(--default-text-color);
+}
+
+.nav-file-title:hover {
+    font-weight: bold !important;
+}
+
+.nav-file-title.is-active,
+.nav-file-title.is-active:hover {
+    color: var(--text-accent) !important;
+    background-color: var(--background-secondary) !important;
 }
 
 /*
@@ -109,7 +124,7 @@ these to suit your own folder structure and vault theme!
             transparent);
 }
 
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="00"]) .nav-file-title {
+/* .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="00"]) .nav-file-title {
     color: color-mix(in srgb,
             var(--z0-color) var(--medium-contrast-amount),
             var(--default-text-color));
@@ -122,7 +137,7 @@ these to suit your own folder structure and vault theme!
     --nav-item-background-active: color-mix(in srgb,
             var(--z0-color) var(--active-contrast-amount),
             transparent);
-}
+} */
 
 /* ------------------------------- 01 Prefix -------------------------------- */
 .nav-folder-title[data-path^="01"] {
@@ -151,7 +166,7 @@ these to suit your own folder structure and vault theme!
             transparent);
 }
 
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="01"]) .nav-file-title {
+/* .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="01"]) .nav-file-title {
     color: color-mix(in srgb,
             var(--z1-color) var(--medium-contrast-amount),
             var(--default-text-color));
@@ -164,7 +179,7 @@ these to suit your own folder structure and vault theme!
     --nav-item-background-active: color-mix(in srgb,
             var(--z1-color) var(--active-contrast-amount),
             transparent);
-}
+} */
 
 /* ------------------------------- 02 Prefix -------------------------------- */
 .nav-folder-title[data-path^="02"] {
@@ -195,7 +210,7 @@ these to suit your own folder structure and vault theme!
             transparent);
 }
 
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="02"]) .nav-file-title {
+/* .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="02"]) .nav-file-title {
     color: color-mix(in srgb,
             var(--z2-color) var(--medium-contrast-amount),
             var(--default-text-color));
@@ -208,7 +223,7 @@ these to suit your own folder structure and vault theme!
     --nav-item-background-active: color-mix(in srgb,
             var(--z2-color) var(--active-contrast-amount),
             transparent);
-}
+} */
 
 /* ------------------------------- 03 Prefix -------------------------------- */
 .nav-folder-title[data-path^="03"] {
@@ -237,7 +252,7 @@ these to suit your own folder structure and vault theme!
             transparent);
 }
 
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="03"]) .nav-file-title {
+/* .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="03"]) .nav-file-title {
     color: color-mix(in srgb,
             var(--z3-color) var(--medium-contrast-amount),
             var(--default-text-color));
@@ -250,7 +265,7 @@ these to suit your own folder structure and vault theme!
     --nav-item-background-active: color-mix(in srgb,
             var(--z3-color) var(--active-contrast-amount),
             transparent);
-}
+} */
 
 /* ------------------------------- 04 Prefix -------------------------------- */
 .nav-folder-title[data-path^="04"] {
@@ -279,7 +294,7 @@ these to suit your own folder structure and vault theme!
             transparent);
 }
 
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="04"]) .nav-file-title {
+/* .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="04"]) .nav-file-title {
     color: color-mix(in srgb,
             var(--z4-color) var(--medium-contrast-amount),
             var(--default-text-color));
@@ -292,7 +307,7 @@ these to suit your own folder structure and vault theme!
     --nav-item-background-active: color-mix(in srgb,
             var(--z4-color) var(--active-contrast-amount),
             transparent);
-}
+} */
 
 /* ------------------------------- 05 Prefix -------------------------------- */
 .nav-folder-title[data-path^="05"] {
@@ -321,7 +336,7 @@ these to suit your own folder structure and vault theme!
             transparent);
 }
 
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="05"]) .nav-file-title {
+/* .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="05"]) .nav-file-title {
     color: color-mix(in srgb,
             var(--purple) var(--medium-contrast-amount),
             var(--default-text-color));
@@ -334,7 +349,7 @@ these to suit your own folder structure and vault theme!
     --nav-item-background-active: color-mix(in srgb,
             var(--purple) var(--active-contrast-amount),
             transparent);
-}
+} */
 
 /* ------------------------------- 06 Prefix -------------------------------- */
 .nav-folder-title[data-path^="06"] {
@@ -365,7 +380,7 @@ these to suit your own folder structure and vault theme!
             transparent);
 }
 
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="06"]) .nav-file-title {
+/* .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="06"]) .nav-file-title {
     color: color-mix(in srgb,
             var(--magenta) var(--medium-contrast-amount),
             var(--default-text-color));
@@ -378,7 +393,7 @@ these to suit your own folder structure and vault theme!
     --nav-item-background-active: color-mix(in srgb,
             var(--magenta) var(--active-contrast-amount),
             transparent);
-}
+} */
 
 /* ------------------------------- 07 Prefix -------------------------------- */
 .nav-folder-title[data-path^="07"] {
@@ -409,7 +424,7 @@ these to suit your own folder structure and vault theme!
             transparent);
 }
 
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="07"]) .nav-file-title {
+/* .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="07"]) .nav-file-title {
     color: color-mix(in srgb,
             var(--hot-red) var(--medium-contrast-amount),
             var(--default-text-color));
@@ -422,7 +437,7 @@ these to suit your own folder structure and vault theme!
     --nav-item-background-active: color-mix(in srgb,
             var(--hot-red) var(--active-contrast-amount),
             transparent);
-}
+} */
 
 /* ------------------------------- 99 Prefix -------------------------------- */
 .nav-folder-title[data-path^="99"] {
@@ -453,7 +468,7 @@ these to suit your own folder structure and vault theme!
             transparent);
 }
 
-.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="99"]) .nav-file-title {
+/* .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="99"]) .nav-file-title {
     color: color-mix(in srgb,
             var(--z99-color) var(--medium-contrast-amount),
             var(--default-text-color));
@@ -466,4 +481,4 @@ these to suit your own folder structure and vault theme!
     --nav-item-background-active: color-mix(in srgb,
             var(--z99-color) var(--active-contrast-amount),
             transparent);
-}
+} */
