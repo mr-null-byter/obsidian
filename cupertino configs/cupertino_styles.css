@@ -22,9 +22,9 @@ body {
 }
 
 /* change default text colors */
-.theme-dark .markdown-reading-view,
-.theme-dark .markdown-reading-view {
-    --text-normal: var(--default-text-color);
+.theme-dark .markdown-source-view,
+.theme-dark .markdown-preview-view {
+    --text-normal: var(--default-text-color) !important;
     --h1-color: var(--default-text-color);
     --h2-color: var(--default-text-color);
     --h3-color: var(--default-text-color);
