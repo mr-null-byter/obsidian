@@ -51,6 +51,18 @@ body:not(.is-tablet):not(.is-mobile) {
     --liquid-glass-background: hsl(0, 0%, calc(var(--primary-gray-frac) + 1%)) !important;
 }
 
+/* ================= Remove lines between folders ================= */
+body.obsidian-app.is-mobile .nav-files-container>div .tree-item .tree-item-self .tree-item-icon {
+    position: relative;
+    margin-inline-end: 5px;
+}
+
+body:is(.liquid-glass-off, :not(.liquid-glass-off)).obsidian-app.is-mobile .nav-files-container>div .tree-item:not(.nav-files-container>div>div:nth-child(2)):not(:last-child:only-child):before {
+    position: relative;
+}
+
+/* ================= Remove lines between folders ================= */
+
 /* ==================== fix SN Pro ligature ====================  */
 /* ====================== FIXED IN v2.5+ =======================  */
 /* github issue: https://github.com/aaaaalexis/obsidian-cupertino/issues/208#issuecomment-3314742412 */
