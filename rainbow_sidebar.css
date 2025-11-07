@@ -80,12 +80,14 @@ body:not(.is-tablet):not(.is-mobile) {
 
 .nav-file-title:hover {
     font-weight: bold !important;
+    color: var(--default-text-color) !important;
 }
 
 .nav-file-title.is-active,
 .nav-file-title.is-active:hover {
     color: var(--text-accent) !important;
-    background-color: var(--background-secondary) !important;
+    background-color: color-mix(in srgb, var(--text-accent) 5%, var(--background-secondary) 95%) !important;
+  
 }
 
 /*
