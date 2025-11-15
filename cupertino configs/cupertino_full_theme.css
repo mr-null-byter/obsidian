@@ -929,17 +929,6 @@ body.theme-light .modal {
     z-index: 1
 }
 
-.modal-close-button::before {
-    content: "✕";
-    line-height: 1;
-    display: block;
-    text-align: center;
-    width: var(--icon-l);
-    height: var(--icon-l);
-    font-size: var(--icon-m);
-    font-weight: bold
-}
-
 body.is-phone .modal:not(.mod-sidebar-layout) .modal-header {
     border-bottom: none;
     padding-top: 24px
