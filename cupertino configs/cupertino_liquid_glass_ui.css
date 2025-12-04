@@ -28,14 +28,13 @@ body {
     backdrop-filter: blur(14px) saturate(180%) !important;
     -webkit-backdrop-filter: blur(14px) saturate(180%) !important;
     overflow: hidden !important;
-    /* margin: 18px 0 0 10px !important; */
-    /* height: calc(100% - 50px) !important; */
-    max-width: 80vw !important;
+    margin: 10px !important;
+
 }
 
 /* fix iOS26 update pushing sidebar into traffic light buttons */
 .is-mobile .workspace-drawer.mod-left .workspace-drawer-inner {
-  padding-top: 15px !important;
+  padding-top: 20px !important;
 }
 
 /* ================ apply Liquid Glass to palette ================ */
@@ -47,6 +46,7 @@ div.prompt {
 /* ================== apply Liquid Glass to tabs ================== */
 .workspace-tab-header {
     background: var(--liquid-glass-bg-darker) !important;
+    margin: 0px 0px 20px 0px !important;
 }
 
 .workspace-tab-header.is-active,
