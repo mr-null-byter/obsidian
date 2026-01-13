@@ -1,18 +1,16 @@
 /* =================================================================== */
-/* This CSS is meant for all styling changes that are theme invariant. */
-/* Do NOT add styles that are in any way dependent on a given theme.   */
-/* Changing the theme should not break anything specified here.         */
+/* THEME-INVARIANT STYLES: Content formatting, images, UI elements     */
+/* These styles work regardless of theme choice                        */
 /* =================================================================== */
 
-/* variable declarations */
 :root {
     --opacity-transition-duration: 0.2s;
 }
 
-/* ===================== styling note breadcrumbs ===================== */
+/* Breadcrumb navigation */
 .view-header-title-container.mod-at-start.mod-fade {
-    opacity: 0.3 ! important;
-    display: flex ! important;
+    opacity: 0.3 !important;
+    display: flex !important;
     transition: opacity var(--opacity-transition-duration) ease-in-out;
 }
 
@@ -20,54 +18,49 @@
     opacity: 1 !important;
 }
 
-/* =================== styling note breadcrumbs DONE =================== */
-
-/* ===================== increase LaTex font size ===================== */
+/* LaTeX font size */
 .MathJax {
     font-size: 1.1rem;
 }
 
-/* ===================== styling enumerated lists ===================== */
+/* Enumerated lists */
 ol li {
     margin: 0px 20px;
 }
 
-/* ===================== styling mermaid diagrams ===================== */
+/* Mermaid diagrams */
 .mermaid {
     display: flex;
     justify-content: center;
     margin: 20px;
 }
 
-/* ===================== blur main background open ===================== */
+/* Modal backdrop blur */
 .modal-container {
     backdrop-filter: blur(10px);
 }
 
-/* =========================== image styling =========================== */
-/* center with `| center` (must be first arg) */
+/* Images */
 img[alt*="center"] {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* dim image with shadows */
 img {
     opacity: 0.9;
-    transition: opacity var(--opacity-transition-duration) ease-in-out;
     border-radius: 10px;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: opacity var(--opacity-transition-duration) ease-in-out, 
+                transform 0.2s ease-in-out;
 }
 
-img:not([width]) {
-    width: auto !important;
-}
-
-/* brighten on hover */
 img:hover {
     opacity: 1;
     transform: scale(1.01);
 }
 
-/* ======================== image styling DONE ======================== */
+/* Prevent image width override in markdown only */
+.markdown-preview-view img:not([width]),
+.markdown-source-view img:not([width]) {
+    width: auto !important;
+}

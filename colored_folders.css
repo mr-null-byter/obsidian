@@ -13,7 +13,7 @@ customization. Just swap out the color variable names in the prefix groups.
 
 -------------------------------------------------------------------------------*/
 
-@import "cupertino_styles.css";
+@import "dark_theme_colors.css";
 
 :root {
         /* ====================== Defaults to mobile/tablet ====================== */
@@ -21,24 +21,16 @@ customization. Just swap out the color variable names in the prefix groups.
         --nav-folder-padding: 10px 5px 10px 15px;
         --nav-folder-border-radius: 50px;
 
-        /* Flexoki 400 */
-        /* --alpha: 0.9;
-        --z0-color: rgba(135, 133, 128, var(--alpha));
-        --z1-color: rgba(161, 106, 0, var(--alpha));
-        --z2-color: rgba(86, 74, 222, var(--alpha));
-        --z3-color: rgba(176, 47, 194, var(--alpha));
-        --z4-color: rgba(233, 21, 45, calc(var(--alpha) - 0.1));
-        --z99-color: rgba(135, 133, 128, calc(var(--alpha) - 0.4)); */
-
         /* Sequential */
+        --default-folder-color: hsl(237, 50%, 70%);
         --z0-color: hsl(0, 0%, 60%);
-        --z1-color: hsl(250, 50%, 80%);
-        --z2-color: hsl(250, 50%, 70%);
-        --z3-color: hsl(250, 50%, 60%);
-        --z4-color: hsl(250, 50%, 50%);
-        --z99-color: hsl(0, 0%, 30%);
+        --z1-color: var(--default-folder-color);
+        --z2-color: var(--default-folder-color);
+        --z3-color: var(--default-folder-color);
+        --z4-color: var(--default-folder-color);
+        --z99-color: hsl(0, 0%, 40%);
 
-        --highlight: #fff;
+        --highlight: var(--default-folder-color);
         --shadow: #0b0c2c;
         --nav-item-weight-hover: bold;
 }
@@ -47,15 +39,7 @@ customization. Just swap out the color variable names in the prefix groups.
 body:not(.is-tablet):not(.is-mobile) {
         --folder-nav-font-size: 16px;
         --nav-folder-padding: 10px 5px 10px 20px;
-        --nav-folder-border-radius: 15px;
-
-        /* Flexoki 300 */
-        /* --z0-color: rgba(135, 133, 128, var(--alpha));
-        --z1-color: rgba(90, 189, 172, var(--alpha));
-        --z2-color: rgba(102, 160, 200, var(--alpha));
-        --z3-color: rgba(166, 153, 208, var(--alpha));
-        --z4-color: rgba(228, 125, 168, calc(var(--alpha) - 0.1));
-        --z99-color: rgba(135, 133, 128, calc(var(--alpha) - 0.4)); */
+        --nav-folder-border-radius: 12px;
 }
 
 .theme-dark {

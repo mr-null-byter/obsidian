@@ -1,0 +1,2 @@
+# Getting Started
+[Baseline](https://github.com/aaaaalexis/obsidian-baseline), of which [Cupertino](https://github.com/aaaaalexis/obsidian-cupertino) is a styled version, playes nicely on Mac. The additional CSS here adds my desired customizations.
