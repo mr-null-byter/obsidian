@@ -29,16 +29,19 @@ body {
 /* Desktop-specific adjustments */
 body:not(.is-tablet):not(.is-mobile) {
     --color-base-20: var(--background-secondary) !important;
-    --primary-gray-frac: 8%;
+    --primary-gray-frac: 7%;
 }
 
 /* Dark theme backgrounds */
 .theme-dark {
-    --background-primary: hsl(0, 0%, var(--primary-gray-frac));
-    --secondary-gray-frac: calc(var(--primary-gray-frac) + 2%);
-    --background-secondary: hsl(0, 0%, var(--secondary-gray-frac));
+    --background-primary: hsl(0, 0%, var(--primary-gray-frac)) !important;
+    --secondary-gray-frac: calc(var(--primary-gray-frac) + 2%) !important;
+    --background-secondary: hsl(0, 0%, var(--secondary-gray-frac)) !important;
+    --background-primary-alt: var(--background-secondary) !important;
+    --interactive-background: var(--background-secondary) !important;
+    --border-color: var(--background-secondary) !important;
     --interactive-accent: color-mix(in srgb, var(--text-accent) 60%, var(--background-primary) 40%) !important;
-    --liquid-glass-background: hsl(0, 0%, calc(var(--primary-gray-frac) - 2%)) !important;
+    --liquid-glass-background: hsl(0, 0%, calc(var(--primary-gray-frac))) !important;
 }
 
 /* Apply text colors to markdown views */
