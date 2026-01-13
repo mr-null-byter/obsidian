@@ -178,3 +178,8 @@ body:not(.is-mobile) .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-
 .workspace-tab-header-inner::after {
     content: none !important;
 }
+
+/* Align tabs to the left */
+.workspace-tab-header-container-inner {
+    justify-content: flex-start !important;
+}
