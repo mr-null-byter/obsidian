@@ -1,4 +1,9 @@
 # Getting Started
-[Baseline](https://github.com/aaaaalexis/obsidian-baseline), of which [Cupertino](https://github.com/aaaaalexis/obsidian-cupertino) is a styled version, does not play nice on iOS and iPadOS. Updates can bring about breaking changes, and simple CSS like changing default colors that works on Mac does not work on mobile platforms, e.g., enforces absolute black everywhere without easy way to override.
+[Cupertino](https://github.com/aaaaalexis/obsidian-cupertino) doesn't play nice with custom CSS. It's itself a styled fork of [Baseline](https://github.com/aaaaalexis/obsidian-baseline), so custom CSS against it is likely doubly counted and won't work reliably.
 
-The CSS here applies to Obsidian's Default theme and creates a minimal clean UI that should remain stable.
+Baseline is reliable though as a base theme and supports custom theming just fine. For iOS platforms, I'm using Baseline with the style settings defined in `baseline_style_settings.json` alongside
+- `base_styles.css`: Set of theme agnostic styling.
+- `catppuccin_syntax.css`: Catppuccin syntax highlighting for code blocks.
+- `colored_folders.css`: Monochromatic color set for folders.
+- `dark_theme_colors.css`: Color variables for a simple dark theme, similar to Flexoki.
+- `sidebar_styles.css`: Styling the left/right side bars.
