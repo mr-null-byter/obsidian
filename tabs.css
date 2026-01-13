@@ -1,0 +1,180 @@
+body {
+    --tab-radius: 25px !important;
+}
+
+body:not(.is-phone) .workspace .mod-root .workspace-tabs:not(.mod-stacked) {
+    --tab-radius-active: var(--tab-radius);
+    --tab-curve: 0
+}
+
+body:not(.is-phone) .workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner {
+    padding-bottom: 8px;
+    gap: 8px;
+    margin: 0
+}
+
+body:not(.is-phone) .workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
+    padding: 0
+}
+
+body:not(.is-phone) .workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:not(.is-active):not(:hover) {
+    opacity: .5
+}
+
+body:not(.is-phone) .workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner {
+    padding-inline-start: 12px;
+    padding-inline-end: 6px;
+    margin-bottom: 0
+}
+
+body.is-tablet .mod-root .workspace-tabs:not(.mod-stacked) {
+    --header-height: 60px !important
+}
+
+body.is-tablet .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner {
+    padding: 0 !important
+}
+
+body.is-tablet .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
+    margin: 8px 0
+}
+
+body:not(.is-phone):not(.center-tabs-off) .mod-root .workspace-tabs:not(.mod-stacked) {
+    --tab-max-width: var(--tab-width);
+    container-type: inline-size
+}
+
+@container (min-width: 560px) {
+    body:not(.is-phone):not(.center-tabs-off) .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner {
+        flex: 1;
+        justify-content: safe center;
+        transition: padding-left var(--anim-duration-moderate) var(--anim-motion-cupertino), padding-right var(--anim-duration-moderate) var(--anim-motion-cupertino)
+    }
+
+    body:not(.is-phone):not(.center-tabs-off) .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header-spacer {
+        display: none
+    }
+}
+
+@container (min-width: 560px) {
+    body.mod-macos:not(.is-mobile):not(.center-tabs-off) .mod-root .workspace-tabs:not(.mod-stacked).mod-top-left-space.mod-top-right-space .workspace-tab-header-container-inner {
+        padding-right: calc(var(--frame-left-space) + --tab-action-width*2)
+    }
+
+    body.mod-macos:not(.is-mobile):not(.center-tabs-off) .mod-root .workspace-tabs:not(.mod-stacked).mod-top-left-space:not(.mod-top-right-space) .workspace-tab-header-container-inner {
+        padding-right: calc(var(--frame-left-space) - var(--tab-action-width))
+    }
+
+    body.mod-macos:not(.is-mobile):not(.center-tabs-off) .mod-root .workspace-tabs:not(.mod-stacked):not(.mod-top-left-space).mod-top-right-space .workspace-tab-header-container-inner {
+        padding-left: calc(var(--tab-action-width)*3)
+    }
+
+    body.mod-macos:not(.is-mobile):not(.center-tabs-off) .mod-root .workspace-tabs:not(.mod-stacked):not(.mod-top-left-space):not(.mod-top-right-space) .workspace-tab-header-container-inner {
+        padding-left: calc(var(--tab-action-width)*2)
+    }
+}
+
+@container (min-width: 560px) {
+    body:not(.mod-macos):not(.is-mobile):not(.center-tabs-off) .mod-root .workspace-tabs:not(.mod-stacked).mod-top-left-space.mod-top-right-space .workspace-tab-header-container-inner {
+        padding-left: calc(var(--frame-right-space) + var(--tab-action-width)*2)
+    }
+
+    body:not(.mod-macos):not(.is-mobile):not(.center-tabs-off) .mod-root .workspace-tabs:not(.mod-stacked).mod-top-left-space:not(.mod-top-right-space) .workspace-tab-header-container-inner {
+        padding-left: calc(var(--tab-action-width)*2)
+    }
+
+    body:not(.mod-macos):not(.is-mobile):not(.center-tabs-off) .mod-root .workspace-tabs:not(.mod-stacked):not(.mod-top-left-space).mod-top-right-space .workspace-tab-header-container-inner {
+        padding-left: calc(var(--frame-right-space) + var(--tab-action-width)*3)
+    }
+
+    body:not(.mod-macos):not(.is-mobile):not(.center-tabs-off) .mod-root .workspace-tabs:not(.mod-stacked):not(.mod-top-left-space):not(.mod-top-right-space).mod-top .workspace-tab-header-container-inner {
+        padding-left: calc(var(--tab-action-width)*3)
+    }
+
+    body:not(.mod-macos):not(.is-mobile):not(.center-tabs-off) .mod-root .workspace-tabs:not(.mod-stacked):is(.mod-root>.workspace-tabs):not(:only-of-type).mod-top-left-space:not(.mod-top-right-space) .workspace-tab-header-container-inner {
+        padding-left: var(--tab-action-width)
+    }
+
+    body:not(.mod-macos):not(.is-mobile):not(.center-tabs-off) .mod-root .workspace-tabs:not(.mod-stacked):is(.mod-root>.workspace-tabs):not(:only-of-type):first-of-type:not(.mod-top-left-space):not(.mod-top-right-space) .workspace-tab-header-container-inner,
+    body:not(.mod-macos):not(.is-mobile):not(.center-tabs-off) .mod-root .workspace-tabs:not(.mod-stacked):not(.mod-top) .workspace-tab-header-container-inner {
+        padding-left: calc(var(--tab-action-width)*2)
+    }
+}
+
+@container (min-width: 560px) {
+    body.is-tablet:not(.center-tabs-off) .mod-root .workspace-tabs:not(.mod-stacked).mod-top-left-space.mod-top-right-space .workspace-tab-header-container-inner {
+        padding-left: calc(var(--tab-action-width)*2)
+    }
+
+    body.is-tablet:not(.center-tabs-off) .mod-root .workspace-tabs:not(.mod-stacked).mod-top-left-space:not(.mod-top-right-space) .workspace-tab-header-container-inner {
+        padding-left: var(--tab-action-width)
+    }
+
+    body.is-tablet:not(.center-tabs-off) .mod-root .workspace-tabs:not(.mod-stacked):not(.mod-top-left-space).mod-top-right-space .workspace-tab-header-container-inner {
+        padding-left: calc(var(--tab-action-width)*3)
+    }
+
+    body.is-tablet:not(.center-tabs-off) .mod-root .workspace-tabs:not(.mod-stacked):not(.mod-top-left-space):not(.mod-top-right-space) .workspace-tab-header-container-inner {
+        padding-left: calc(var(--tab-action-width)*2)
+    }
+}
+
+@container (min-width: 560px) {
+    body.is-tablet:not(.center-tabs-off) .workspace-drawer.is-pinned.mod-left+.mod-root .workspace-tabs:not(.mod-stacked).mod-top-left-space.mod-top-right-space .workspace-tab-header-container-inner {
+        padding-left: calc(var(--tab-action-width)*3)
+    }
+
+    body.is-tablet:not(.center-tabs-off) .workspace-drawer.is-pinned.mod-left+.mod-root .workspace-tabs:not(.mod-stacked).mod-top-left-space:not(.mod-top-right-space) .workspace-tab-header-container-inner {
+        padding-left: calc(var(--tab-action-width)*2)
+    }
+}
+
+@container (min-width: 560px) {
+    body.is-tablet:not(.center-tabs-off) .mod-root:has(+.workspace-drawer.is-pinned.mod-right) .workspace-tabs:not(.mod-stacked).mod-top-left-space.mod-top-right-space .workspace-tab-header-container-inner {
+        padding-left: var(--tab-action-width)
+    }
+
+    body.is-tablet:not(.center-tabs-off) .mod-root:has(+.workspace-drawer.is-pinned.mod-right) .workspace-tabs:not(.mod-stacked):not(.mod-top-left-space).mod-top-right-space .workspace-tab-header-container-inner {
+        padding-left: calc(var(--tab-action-width)*2)
+    }
+}
+
+body:not(.mod-macos).is-hidden-frameless .mod-sidedock .workspace-tabs.mod-top-right-space .workspace-tab-header-container {
+    padding-right: var(--frame-right-space)
+}
+
+body.mod-macos.is-frameless:not(.is-popout-window) .workspace .workspace-tabs.mod-top-right-space .workspace-tab-header-container {
+    padding-right: 8px
+}
+
+body.is-phone>.app-container>.horizontal-main-container:has(.workspace>.mod-root>.workspace-tabs.mod-visible>.workspace-tab-container>.workspace-leaf.mod-active>.workspace-leaf-content:not([data-type=markdown])) .view-actions button:nth-last-child(2) {
+    opacity: 0;
+    pointer-events: none
+}
+
+body.is-phone.mode-switcher-off .mobile-navbar,
+body.is-phone>.app-container>.horizontal-main-container:has(.workspace>.mod-root>.workspace-tabs.mod-visible>.workspace-tab-container>.workspace-leaf.mod-active>.workspace-leaf-content:not([data-type=markdown]))~.mobile-navbar {
+    max-width: calc(100% - var(--navbar-side-padding)*2)
+}
+
+body.layout-cupertino:not(.is-mobile) .mod-root .workspace-tabs {
+    overflow: visible
+}
+
+.mod-sidedock .workspace-tabs .workspace-leaf {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+body:not(.is-mobile) .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
+    height: 32px;
+    margin: auto 0
+}
+
+.workspace-tab-header-container {
+    background-color: transparent !important;
+    border-bottom: none !important;
+}
+
+.workspace-tab-header-inner::after {
+    content: none !important;
+}
