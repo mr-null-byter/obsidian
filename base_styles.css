@@ -9,6 +9,7 @@
 
 /* Breadcrumb navigation */
 .view-header-title-container.mod-at-start.mod-fade {
+    font-size: 16px;
     opacity: 0.3 !important;
     display: flex !important;
     transition: opacity var(--opacity-transition-duration) ease-in-out;
