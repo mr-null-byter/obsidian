@@ -13,7 +13,7 @@ customization. Just swap out the color variable names in the prefix groups.
 
 -------------------------------------------------------------------------------*/
 
-@import "minimal_styles.css";
+@import "dark_theme_colors.css";
 
 :root {
         /* ====================== Defaults to mobile/tablet ====================== */

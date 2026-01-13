@@ -2,7 +2,7 @@
 /* SIDEBAR & TAB STYLES: Liquid glass effect, margins, tab appearance */
 /* =================================================================== */
 
-@import "minimal_styles.css";
+@import "dark_theme_colors.css";
 
 body {
     /* Liquid glass variables */
