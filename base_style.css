@@ -1,0 +1,66 @@
+/* =================================================================== */
+/* THEME-INVARIANT STYLES: Content formatting, images, UI elements     */
+/* These styles work regardless of theme choice                        */
+/* =================================================================== */
+
+:root {
+    --opacity-transition-duration: 0.2s;
+}
+
+/* Breadcrumb navigation */
+.view-header-title-container.mod-at-start.mod-fade {
+    opacity: 0.3 !important;
+    display: flex !important;
+    transition: opacity var(--opacity-transition-duration) ease-in-out;
+}
+
+.view-header-title-container.mod-at-start.mod-fade:hover {
+    opacity: 1 !important;
+}
+
+/* LaTeX font size */
+.MathJax {
+    font-size: 1.1rem;
+}
+
+/* Enumerated lists */
+ol li {
+    margin: 0px 20px;
+}
+
+/* Mermaid diagrams */
+.mermaid {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Modal backdrop blur */
+.modal-container {
+    backdrop-filter: blur(10px);
+}
+
+/* Images */
+img[alt*="center"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    opacity: 0.9;
+    border-radius: 10px;
+    transition: opacity var(--opacity-transition-duration) ease-in-out, 
+                transform 0.2s ease-in-out;
+}
+
+img:hover {
+    opacity: 1;
+    transform: scale(1.01);
+}
+
+/* Prevent image width override in markdown only */
+.markdown-preview-view img:not([width]),
+.markdown-source-view img:not([width]) {
+    width: auto !important;
+}
