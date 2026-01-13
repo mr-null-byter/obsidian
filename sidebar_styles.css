@@ -1,0 +1,72 @@
+/* =================================================================== */
+/* SIDEBAR & TAB STYLES: Liquid glass effect, margins, tab appearance */
+/* =================================================================== */
+
+@import "minimal_styles.css";
+
+body {
+    /* Liquid glass variables */
+    --liquid-glass-border: hsl(0, 0%, calc(var(--primary-gray-frac) + 5%));
+    --liquid-glass-bg-darker: hsl(0, 0%, calc(var(--primary-gray-frac) - 5%));
+    --liquid-glass-border-radius: 25px;
+    --liquid-glass-shadow:
+        0 0 20px var(--liquid-glass-background),
+        inset 0 0 2px var(--liquid-glass-border);
+    --liquid-glass-shadow-tab:
+        0 0 20px var(--liquid-glass-background),
+        inset 0 0 200px var(--liquid-glass-border);
+    
+    /* Sidebar spacing */
+    --left-sidebar-margin: 0px;
+}
+
+body.is-tablet {
+    --left-sidebar-margin: 40px 10px 10px 10px;
+}
+
+/* Sidebar liquid glass effect */
+.workspace-split.mod-left-split,
+.workspace-drawer.mod-left,
+.workspace-split.mod-right-split,
+.workspace-drawer.mod-right {
+    background: var(--liquid-glass-background) !important;
+    border: 1px solid var(--liquid-glass-border) !important;
+    border-radius: var(--liquid-glass-border-radius) !important;
+    box-shadow: var(--liquid-glass-shadow) !important;
+    backdrop-filter: blur(14px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(14px) saturate(180%) !important;
+    overflow: hidden !important;
+    margin: var(--left-sidebar-margin) !important;
+    height: calc(100% - calc(var(--left-sidebar-margin) * 2)) !important;
+}
+
+/* Hide left sidebar headers */
+.workspace-split.mod-left-split .workspace-tab-header,
+.workspace-drawer.mod-left .workspace-tab-header,
+.workspace-split.mod-left-split .nav-header,
+.workspace-drawer.mod-left .nav-header {
+    display: none !important;
+}
+
+/* File explorer positioning */
+.nav-files-container {
+    padding: 15px !important;
+    top: -20px;
+}
+
+/* Command palette liquid glass */
+div.prompt {
+    border: 1px solid var(--liquid-glass-border) !important;
+    box-shadow: var(--liquid-glass-shadow) !important;
+}
+
+/* Tab styling */
+.workspace-tab-header {
+    background: var(--liquid-glass-bg-darker) !important;
+}
+
+.workspace-tab-header.is-active,
+.workspace-tab-header:hover {
+    background: var(--liquid-glass-bg-darker) !important;
+    box-shadow: var(--liquid-glass-shadow-tab) !important;
+}
