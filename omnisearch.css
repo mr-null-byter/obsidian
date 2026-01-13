@@ -1,0 +1,11 @@
+@media only screen and (max-width: 600px) {
+  .prompt {
+    width: fit-content;
+    max-width: 95vw !important;
+    max-height: 90vh !important;
+    margin: -100px 10px 10px 10px !important;
+    position: relative;
+    overflow-wrap: break-word !important;
+    word-break: break-all !important;
+  }
+}
