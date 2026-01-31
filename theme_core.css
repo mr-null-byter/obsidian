@@ -1,0 +1,30 @@
+/* =================================================================== */
+/* CORE THEME STYLING                                                  */
+/* Colors, typography, backgrounds - imports theme-variables.css       */
+/* =================================================================== */
+
+@import "theme_variables.css";
+
+/* ============== MARKDOWN VIEWS ============== */
+.theme-dark .markdown-source-view,
+.theme-dark .markdown-preview-view {
+    --text-normal: var(--default-text-color) !important;
+    --h1-color: var(--default-text-color);
+    --h2-color: var(--default-text-color);
+    --h3-color: var(--default-text-color);
+    --h4-color: var(--default-text-color);
+    --h5-color: var(--default-text-color);
+    --h6-color: var(--default-text-color);
+}
+
+/* ============== SETTINGS MODAL ============== */
+/* Remove settings sidebar divider */
+.modal-content .vertical-tab-header {
+    border-right: none !important;
+}
+
+/* ============== COMMAND PALETTE ============== */
+div.prompt {
+    border: 1px solid var(--liquid-glass-border) !important;
+    box-shadow: var(--liquid-glass-shadow) !important;
+}

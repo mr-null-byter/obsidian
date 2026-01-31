@@ -1,0 +1,136 @@
+/* =================================================================== */
+/* MASTER VARIABLES FILE                                               */
+/* All colors, measurements, and custom properties in one place        */
+/* =================================================================== */
+
+:root,
+body {
+    /* ============== TYPOGRAPHY ============== */
+    --font-text-theme: SN Pro;
+    --font-interface-theme: SN Pro;
+
+    /* ============== PRIMARY COLORS ============== */
+    --primary-gray-frac: 5%;
+
+    /* ============== TEXT COLORS ============== */
+    --formatted-text-color: hsl(23, 50%, 55%);
+    --default-text-color: hsl(0, 0%, 80%);
+    --text-accent: hsl(206, 100%, 73%) !important;
+
+    /* Text element colors (all use default text color) */
+    --bold-color: var(--formatted-text-color);
+    --italic-color: var(--formatted-text-color);
+    --inline-title-color: var(--default-text-color);
+    --text-normal: var(--default-text-color) !important;
+    --h1-color: var(--default-text-color);
+    --h2-color: var(--default-text-color);
+    --h3-color: var(--default-text-color);
+    --h4-color: var(--default-text-color);
+    --h5-color: var(--default-text-color);
+    --h6-color: var(--default-text-color);
+
+    /* ============== FOLDER COLORS ============== */
+    --default-folder-color: hsl(237, 60%, 70%);
+    --z0-color: hsl(0, 0%, 60%);
+    --z1-color: var(--default-folder-color);
+    --z2-color: var(--default-folder-color);
+    --z3-color: var(--default-folder-color);
+    --z4-color: var(--default-folder-color);
+    --z99-color: hsl(0, 0%, 40%);
+
+    /* Additional folder colors (used in prefixes 05, 06, 07) */
+    --purple: hsl(270, 60%, 70%);
+    --magenta: hsl(330, 60%, 70%);
+    --hot-red: hsl(0, 80%, 65%);
+
+    /* ============== LIQUID GLASS EFFECT ============== */
+    --liquid-glass-background: hsl(0, 0%, var(--primary-gray-frac)) !important;
+    --liquid-glass-border: hsl(0, 0%, calc(var(--primary-gray-frac) + 5%));
+    --liquid-glass-bg-darker: hsl(0, 0%, calc(var(--primary-gray-frac) - 5%));
+    --liquid-glass-border-radius: 25px;
+    --liquid-glass-shadow:
+        0 0 20px var(--liquid-glass-background),
+        inset 0 0 2px var(--liquid-glass-border);
+    --liquid-glass-shadow-tab:
+        0 0 20px var(--liquid-glass-background),
+        inset 0 0 200px var(--liquid-glass-border);
+
+    /* ============== FOLDER NAVIGATION ============== */
+    /* Default to mobile/tablet */
+    --folder-nav-font-size: 18px;
+    --nav-folder-padding: 10px 5px 10px 15px;
+    --nav-folder-border-radius: 50px;
+    --nav-item-weight-hover: bold;
+
+    /* Folder color effects */
+    --highlight: var(--default-folder-color);
+    --shadow: #0b0c2c;
+
+    /* ============== SIDEBAR SPACING ============== */
+    --left-sidebar-margin: 0px;
+
+    /* ============== UI ELEMENTS ============== */
+    --accent-active: color-mix(in srgb, var(--text-accent) 60%, white 40%);
+
+    --link-color: var(--text-accent);
+    --link-color-hover: var(--accent-active);
+    --link-external-color: var(--text-accent);
+    --link-external-color-hover: var(--accent-active);
+
+    --callout-radius: 15px;
+
+    --tag-background: color-mix(in srgb, var(--text-accent) 5%, var(--background-secondary) 95%) !important;
+
+    --tab-background-active: color-mix(in srgb, var(--text-accent) 5%, var(--background-secondary) 95%);
+    --tab-divider-color: hidden;
+    --tab-outline-color: hidden;
+}
+
+/* ============== DESKTOP OVERRIDES ============== */
+body:not(.is-tablet):not(.is-mobile) {
+    --secondary-gray-frac: calc(var(--primary-gray-frac) + 1%);
+    --primary-gray-frac: 5%;
+    --folder-nav-font-size: 16px;
+    --nav-folder-padding: 10px 5px 10px 20px;
+    --nav-folder-border-radius: 12px;
+}
+
+/* ============== TABLET OVERRIDES ============== */
+body.is-tablet {
+    --left-sidebar-margin: 40px 10px 10px 10px;
+}
+
+/* =============== PHONE OVERRIDES ============== */
+
+.theme-dark.is-phone {
+    --icon-container-color: hsla(281, 5%, 100%, 0.0625);
+    --interactive-normal: var(--icon-container-color);
+}
+
+.is-phone .mobile-tab-switcher {
+    backdrop-filter: blur(15px);
+}
+
+/* ============== DARK THEME SPECIFIC ============== */
+.theme-dark {
+    /* Background colors */
+    --background-primary: hsl(0, 0%, var(--primary-gray-frac)) !important;
+    --background-secondary: hsl(0, 0%, var(--secondary-gray-frac)) !important;
+    --background-primary-alt: var(--background-secondary) !important;
+    --interactive-background: var(--background-secondary) !important;
+    --border-color: var(--background-secondary) !important;
+
+    /* Accent colors */
+    --interactive-accent: color-mix(in srgb, var(--text-accent) 80%, var(--background-primary) 20%) !important;
+
+    /* Code colors */
+    --code-background: hsl(239, 22%, 15%);
+    --code-normal: var(--text-normal);
+
+    /* Folder contrast amounts */
+    --contrast-color: var(--highlight);
+    --bg-contrast-amount: 15%;
+    --fg-contrast-amount: 40%;
+    --medium-contrast-amount: 20%;
+    --active-contrast-amount: 10%;
+}
