@@ -1,4 +1,4 @@
-# Getting Started
+# Config for Baseline Theme
 [Cupertino](https://github.com/aaaaalexis/obsidian-cupertino) doesn't play nice with custom CSS. It's itself a styled fork of [Baseline](https://github.com/aaaaalexis/obsidian-baseline), so custom CSS against it usually doesn't work as it uses `!important` in its tweaks.
 
 Baseline, however, is a reliable base theme and supports custom theming just fine. I have found it to work well on both Mac and iOS, thus serving as a robust default theme on all platforms. I'm styling Baseline with the minimal style settings defined in `baseline_style_settings.json`, which are mostly from the [MacOS Tahoe](https://aaaaalexis.github.io/obsidian-baseline/marketplace/) style from the Baseline marketplace.
