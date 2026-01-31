@@ -1,2 +1,4 @@
 # Getting Started
-[Baseline](https://github.com/aaaaalexis/obsidian-baseline), of which [Cupertino](https://github.com/aaaaalexis/obsidian-cupertino) is a styled version, playes nicely on Mac. The additional CSS here adds my desired customizations.
+This repo is a backup of my custom CSS files for styling [Obsidian](https://obsidian.md/). The configuration files for each theme is stored under its respective branch.
+
+To create a backup for a new theme, branch off of `master`, update the README, and commit files.
