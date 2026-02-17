@@ -22,7 +22,7 @@
 
 /* ============== ALL FILE TITLES ============== */
 .nav-file-title {
-    padding: var(--nav-folder-padding);
+    /* padding: var(--nav-folder-padding); */
     font-size: var(--folder-nav-font-size);
     color: var(--default-text-color);
 }
