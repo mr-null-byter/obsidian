@@ -1,30 +1,36 @@
 /* =================================================================== */
-/* CORE THEME STYLING                                                  */
-/* Colors, typography, backgrounds - imports theme-variables.css       */
+/* SIDEBAR STYLING                                                     */
+/* Liquid glass effect, margins, tab appearance                        */
+/* Imports theme-variables.css                                         */
 /* =================================================================== */
 
 @import "theme_variables.css";
 
-/* ============== MARKDOWN VIEWS ============== */
-.theme-dark .markdown-source-view,
-.theme-dark .markdown-preview-view {
-    --text-normal: var(--default-text-color) !important;
-    --h1-color: var(--default-text-color);
-    --h2-color: var(--default-text-color);
-    --h3-color: var(--default-text-color);
-    --h4-color: var(--default-text-color);
-    --h5-color: var(--default-text-color);
-    --h6-color: var(--default-text-color);
+/* ============== SIDEBAR LIQUID GLASS EFFECT ============== */
+.workspace-split.mod-left-split,
+.workspace-drawer.mod-left,
+.workspace-split.mod-right-split,
+.workspace-drawer.mod-right {
+    background: var(--liquid-glass-background);
+    border-radius: var(--liquid-glass-border-radius);
+    box-shadow: var(--liquid-glass-shadow);
+    backdrop-filter: blur(20px) saturate(200%) brightness(1.05);
+    -webkit-backdrop-filter: blur(20px) saturate(200%) brightness(1.05);
+    overflow: hidden;
+    margin: var(--left-sidebar-margin);
+    height: calc(100% - calc(var(--left-sidebar-margin) * 2));
 }
 
-/* ============== SETTINGS MODAL ============== */
-/* Remove settings sidebar divider */
-.modal-content .vertical-tab-header {
-    border-right: none !important;
+/* ============== HIDE LEFT SIDEBAR HEADERS ============== */
+.workspace-split.mod-left-split .workspace-tab-header,
+.workspace-drawer.mod-left .workspace-tab-header,
+.workspace-split.mod-left-split .nav-header,
+.workspace-drawer.mod-left .nav-header {
+    display: none;
 }
 
-/* ============== COMMAND PALETTE ============== */
-div.prompt {
-    border: 1px solid var(--liquid-glass-border) !important;
-    box-shadow: var(--liquid-glass-shadow) !important;
+/* ============== FILE EXPLORER POSITIONING ============== */
+.nav-files-container {
+    padding: 15px;
+    top: -10px;
 }
