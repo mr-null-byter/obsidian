@@ -13,9 +13,9 @@ body {
     --primary-gray-frac: 5%;
 
     /* ============== TEXT COLORS ============== */
-    --formatted-text-color: hsl(23, 50%, 55%);
+    --formatted-text-color: hsl(23, 50%, 60%);
     --default-text-color: hsl(0, 0%, 80%);
-    --text-accent: hsl(206, 100%, 73%) !important;
+    --text-accent: hsl(206, 100%, 75%) !important;
 
     /* Text element colors (all use default text color) */
     --bold-color: var(--formatted-text-color);
@@ -88,8 +88,8 @@ body {
 
 /* ============== DESKTOP OVERRIDES ============== */
 body:not(.is-tablet):not(.is-mobile) {
-    --secondary-gray-frac: calc(var(--primary-gray-frac) + 1%);
     --primary-gray-frac: 5%;
+    --secondary-gray-frac: calc(var(--primary-gray-frac) + 1%);
     --folder-nav-font-size: 16px;
     --nav-folder-padding: 10px 5px 10px 20px;
     --nav-folder-border-radius: 12px;
