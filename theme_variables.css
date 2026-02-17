@@ -45,12 +45,13 @@ body {
 
     /* ============== LIQUID GLASS EFFECT ============== */
     --liquid-glass-background: hsl(0, 0%, var(--primary-gray-frac)) !important;
-    --liquid-glass-border: hsl(0, 0%, calc(var(--primary-gray-frac) + 5%));
+    --liquid-glass-border: hsl(0, 0%, calc(var(--primary-gray-frac) + 15%));
     --liquid-glass-bg-darker: hsl(0, 0%, calc(var(--primary-gray-frac) - 5%));
     --liquid-glass-border-radius: 25px;
     --liquid-glass-shadow:
-        0 0 20px var(--liquid-glass-background),
-        inset 0 0 2px var(--liquid-glass-border);
+      0 8px 32px var(--background-primary),
+      0 0 20px var(--liquid-glass-background),
+      inset 0 0 3px var(--liquid-glass-border);
     --liquid-glass-shadow-tab:
         0 0 20px var(--liquid-glass-background),
         inset 0 0 200px var(--liquid-glass-border);
