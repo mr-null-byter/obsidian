@@ -13,9 +13,9 @@ body {
     --primary-gray-frac: 5%;
 
     /* ============== TEXT COLORS ============== */
-    --formatted-text-color: hsl(23, 50%, 60%);
+    --formatted-text-color: hsl(23, 50%, 55%);
     --default-text-color: hsl(0, 0%, 80%);
-    --text-accent: hsl(206, 100%, 75%) !important;
+    --text-accent: hsl(206, 100%, 73%) !important;
 
     /* Text element colors (all use default text color) */
     --bold-color: var(--formatted-text-color);
