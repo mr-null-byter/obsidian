@@ -11,12 +11,8 @@
 .workspace-drawer.mod-left,
 .workspace-split.mod-right-split,
 .workspace-drawer.mod-right {
-    background: var(--liquid-glass-background);
-    border: 1px solid var(--liquid-glass-border);
     border-radius: var(--liquid-glass-border-radius);
     box-shadow: var(--liquid-glass-shadow);
-    backdrop-filter: blur(14px) saturate(180%);
-    -webkit-backdrop-filter: blur(14px) saturate(180%);
     overflow: hidden;
     margin: var(--left-sidebar-margin);
     height: calc(100% - calc(var(--left-sidebar-margin) * 2));
