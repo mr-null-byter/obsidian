@@ -67,7 +67,7 @@ body {
     /* ============== LIQUID GLASS EFFECT ============== */
     --liquid-glass-background: hsl(var(--bg-hue),
             var(--bg-sat),
-            calc(var(--bg-lit) + 10 * var(--bg-step))) ;
+            calc(var(--bg-lit) + 10 * var(--bg-step)));
     --liquid-glass-border-radius: 25px;
     --liquid-glass-shadow: 0 0 7px var(--liquid-glass-background);
 
@@ -108,6 +108,7 @@ body {
 
 /* ============== DESKTOP OVERRIDES ============== */
 body:not(.is-tablet):not(.is-mobile) {
+    --bg-step: 1%;
     --folder-nav-font-size: 16px;
     --nav-folder-padding: 10px 5px 10px 20px;
     --nav-folder-border-radius: 12px;
@@ -119,8 +120,8 @@ body.is-tablet {
 
     /* unify main and side container backgrounds for liquid glass sidebar pop */
     --background-secondary: hsl(var(--bg-hue),
-                                var(--bg-sat), 
-                                var(--bg-lit)) !important;
+            var(--bg-sat),
+            var(--bg-lit)) !important;
 }
 
 /* =============== PHONE OVERRIDES ============== */
@@ -153,10 +154,10 @@ body.is-tablet {
 
     --titlebar-background: hsl(var(--bg-hue),
             var(--bg-sat),
-            calc(var(--bg-lit) - var(--bg-step))) ;
+            calc(var(--bg-lit) - var(--bg-step)));
     --titlebar-background-focused: hsl(var(--bg-hue),
             var(--bg-sat),
-            calc(var(--bg-lit) - var(--bg-step))) ;
+            calc(var(--bg-lit) - var(--bg-step)));
 
     /* Accent colors */
     --interactive-accent: color-mix(in srgb,
