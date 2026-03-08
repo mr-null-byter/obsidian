@@ -67,7 +67,7 @@ body {
     /* ============== LIQUID GLASS EFFECT ============== */
     --liquid-glass-background: hsl(var(--bg-hue),
             var(--bg-sat),
-            calc(var(--bg-lit) + 10 * var(--bg-step)));
+            calc(var(--bg-lit) + 5 * var(--bg-step)));
     --liquid-glass-border-radius: 25px;
     --liquid-glass-shadow: 0 0 7px var(--liquid-glass-background);
 
