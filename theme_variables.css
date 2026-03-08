@@ -12,8 +12,8 @@ body {
     /* ============== PRIMARY COLORS ============== */
     --bg-hue: 240;
     --bg-sat: 15%;
-    --bg-lit: 6%;
-    --bg-step: 2%;
+    --bg-lit: 7%;
+    --bg-step: 1%;
 
     --text-hue: 0;
     --text-sat: 0%;
@@ -108,7 +108,7 @@ body {
 
 /* ============== DESKTOP OVERRIDES ============== */
 body:not(.is-tablet):not(.is-mobile) {
-    --bg-lit: 7%;
+    /* --bg-lit: 7%; */
     --folder-nav-font-size: 16px;
     --nav-folder-padding: 10px 5px 10px 20px;
     --nav-folder-border-radius: 12px;
