@@ -10,11 +10,11 @@ body {
     --font-interface-theme: SN Pro;
 
     /* ============== PRIMARY COLORS ============== */
-    --bg-hue: 240;
+    --bg-hue: 230;
     --bg-sat: 15%;
     --bg-lit: 7%;
-    --bg-step: 1%;
-  
+    --bg-step: 2%;
+
     --text-hue: 0;
     --text-sat: 0%;
     --text-lit: 75%;
@@ -67,7 +67,7 @@ body {
     /* ============== LIQUID GLASS EFFECT ============== */
     --liquid-glass-background: hsl(var(--bg-hue),
             var(--bg-sat),
-            calc(var(--bg-lit) + 10 * var(--bg-step)));
+            calc(var(--bg-lit) + 5 * var(--bg-step)));
     --liquid-glass-border-radius: 25px;
     --liquid-glass-shadow: 0 0 7px var(--liquid-glass-background);
 
@@ -165,7 +165,7 @@ body.is-tablet {
             var(--background-primary) 20%);
 
     /* Code colors */
-    --code-background: hsl(var(--bg-hue), 22%, 15%);
+    --code-background: hsl(239, 22%, 15%);
     --code-normal: var(--text-normal);
 
     /* Folder contrast amounts */
