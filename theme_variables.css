@@ -11,7 +11,7 @@ body {
 
     /* ============== PRIMARY COLORS ============== */
     --bg-hue: 230;
-    --bg-sat: 15%;
+    --bg-sat: 8%;
     --bg-lit: 7%;
     --bg-step: 2%;
 
@@ -19,9 +19,9 @@ body {
     --text-sat: 0%;
     --text-lit: 75%;
 
-    --accent-hue: 199;
-    --accent-sat: 76%;
-    --accent-lit: 69%;
+    --accent-hue: 212;
+    --accent-sat: 70%;
+    --accent-lit: 68%;
 
     --fmt-text-hue: 23;
     --fmt-text-sat: 50%;
@@ -51,7 +51,7 @@ body {
     --h6-color: var(--default-text-color);
 
     /* ============== FOLDER COLORS ============== */
-    --default-folder-color: hsl(240, 60%, 68%);
+    --default-folder-color: hsl(258, 60%, 60%);
     --z0-color: hsl(0, 0%, 60%);
     --z1-color: var(--default-folder-color);
     --z2-color: var(--default-folder-color);
@@ -80,7 +80,7 @@ body {
 
     /* Folder color effects */
     --highlight: var(--default-folder-color);
-    --shadow: #0b0c2c;
+    --shadow: hsl(var(--bg-hue), 40%, 12%);
 
     /* ============== SIDEBAR SPACING ============== */
     --left-sidebar-margin: 0px;
