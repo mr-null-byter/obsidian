@@ -12,8 +12,8 @@ body {
     /* ============== PRIMARY COLORS ============== */
     --bg-hue: 230;
     --bg-sat: 8%;
-    --bg-lit: 7%;
-    --bg-step: 2%;
+    --bg-lit: 6%;
+    --bg-step: 1%;
 
     --text-hue: 0;
     --text-sat: 0%;
