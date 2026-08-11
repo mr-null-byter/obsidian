@@ -30,12 +30,14 @@ div.prompt {
 }
 
 /* ============== BORDER AROUND MAIN VIEW ============== */
-body:not(.is-tablet):not(.is-mobile) .workspace-split.mod-root {
+body:not(.is-tablet):not(.is-mobile) .mod-root .workspace-tab-container {
     height: auto !important;
     flex: 1 1 auto;
-    margin: 10px;
     border-radius: var(--liquid-glass-border-radius);
     overflow: hidden;
-    box-shadow: 0px 0 0px 0px var(--liquid-glass-background),
-        0px 0px 10px 2px black;
+    margin: 10px;
+}
+
+body:not(.is-tablet):not(.is-mobile) .workspace-split.mod-root {
+   background-color: var(--background-secondary) !important;
 }
