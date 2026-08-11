@@ -12,8 +12,8 @@ body {
     /* ============== PRIMARY COLORS ============== */
     --bg-hue: 230;
     --bg-sat: 8%;
-    --bg-lit: 6%;
-    --bg-step: 1%;
+    --bg-lit: 8%;
+    --bg-step: 2%;
 
     --text-hue: 0;
     --text-sat: 0%;
@@ -67,7 +67,7 @@ body {
     /* ============== LIQUID GLASS EFFECT ============== */
     --liquid-glass-background: hsl(var(--bg-hue),
             var(--bg-sat),
-            calc(var(--bg-lit) + 8 * var(--bg-step)));
+            calc(var(--bg-lit) + 5 * var(--bg-step)));
     --liquid-glass-border-radius: 25px;
     --liquid-glass-shadow: 0 0 7px var(--liquid-glass-background);
 
