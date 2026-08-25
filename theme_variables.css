@@ -165,7 +165,7 @@ body.is-tablet {
             var(--background-primary) 20%);
 
     /* Code colors */
-    --code-background: hsl(calc(var(--bg-hue) - 30),
+    --code-background: hsl(calc(var(--bg-hue) - 10),
             calc(var(--bg-sat) + 4%),
             calc(var(--bg-lit) + 6%));
     --code-normal: var(--text-normal);
