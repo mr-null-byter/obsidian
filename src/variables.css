@@ -1,0 +1,88 @@
+/* =================================================================== */
+/* THEME VARIABLES — single source of truth for all custom theming     */
+/* =================================================================== */
+
+:root body {
+
+    /* ============== GLOBAL VARIABLES ============== */
+    --background-primary: rgb(14, 14, 16);
+    --background-secondary: rgb(8, 8, 10);
+
+    --text-normal: hsl(0, 0%, 75%);
+    --text-muted: hsl(0, 0%, 70%);
+    --text-faint: hsl(0, 0%, 60%);
+
+    --text-accent: hsl(215, 75%, 70%) !important;
+    --formatted-text-color: hsl(22, 48%, 58%);
+
+    /* ============== DERIVED VARIABLES ============== */
+    --background-primary-alt: color-mix(in srgb,
+            var(--text-accent) 4%,
+            var(--background-primary) 96%) !important;
+    --background-secondary-alt: var(--background-secondary) !important;
+    --background-modifier-hover: color-mix(in srgb,
+            var(--text-accent) 10%,
+            var(--background-primary) 90%) !important;
+    --background-modifier-border-hover: color-mix(in srgb,
+            var(--text-accent) 16%,
+            var(--background-primary) 84%) !important;
+    --background-modifier-border: var(--background-secondary) !important;
+    --background-modifier-border-focus: var(--background-modifier-border-hover) !important;
+    --background-modifier-form-field: var(--background-modifier-hover) !important;
+
+    /* ============== TEXT COLORS ============== */
+    --text-accent-hover: color-mix(in srgb,
+            var(--text-accent) 70%,
+            white 30%);
+
+    --text-highlight-bg: color-mix(in srgb,
+            var(--background-secondary) 60%,
+            var(--formatted-text-color) 40%);
+
+    /* ============== TYPOGRAPHY ============== */
+    --font-text-theme: SN Pro;
+    --font-interface-theme: SN Pro;
+    --font-monospace-theme: JetBrainsMono NF;
+
+    --font-ui-smaller: calc(var(--font-text-size) - 4px);
+    --font-ui-small: calc(var(--font-text-size) - 2px);
+    --font-ui-medium: calc(var(--font-text-size));
+    --font-ui-large: calc(var(--font-text-size) + 2px);
+
+    --bold-color: var(--formatted-text-color);
+    --italic-color: var(--formatted-text-color);
+    --inline-title-color: var(--text-normal);
+    --h1-color: var(--text-normal);
+    --h2-color: var(--text-normal);
+    --h3-color: var(--text-normal);
+    --h4-color: var(--text-normal);
+    --h5-color: var(--text-normal);
+    --h6-color: var(--text-normal);
+
+    /* ============== UI ELEMENTS ============== */
+
+    /* buttons */
+    --interactive-normal: var(--background-modifier-hover) !important;
+    --interactive-hover: var(--background-modifier-border-hover) !important;
+    --interactive-accent: color-mix(in srgb,
+            var(--text-accent) 80%,
+            var(--background-primary) 20%) !important;
+
+    /* radius */
+    --radius-s: 16px;
+    --button-radius: 16px;
+
+    /* checkbox */
+    --checkbox-color-hover: var(--text-accent-hover);
+    --checkbox-border-color: var(--text-faint);
+    --checkbox-border-color-hover: var(--text-normal);
+    --checklist-done-color: var(--text-faint);
+
+    /* tabs */
+    --tab-background-active: var(--background-modifier-hover);
+    --tab-divider-color: var(--background-secondary);
+    --tab-outline-color: var(--background-secondary);
+    --tab-curve: 0px;
+    --tab-radius: 10px;
+    --tab-radius-active: 10px;
+}

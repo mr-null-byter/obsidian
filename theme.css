@@ -1,0 +1,248 @@
+/* =================================================================== */
+/* THEME-INVARIANT STYLES: Content formatting, images, UI elements     */
+/* These styles work regardless of theme choice                        */
+/* =================================================================== */
+
+:root {
+    --opacity-transition-duration: 0.2s;
+}
+
+/* Breadcrumb navigation */
+.view-header-title-container.mod-at-start.mod-fade {
+    font-size: 16px;
+    opacity: 0.5 !important;
+    display: flex !important;
+    transition: opacity var(--opacity-transition-duration) ease-in-out;
+}
+
+.view-header-title-container.mod-at-start.mod-fade:hover {
+    opacity: 1 !important;
+}
+
+/* LaTeX font size */
+.MathJax {
+    font-size: 1.1rem;
+}
+
+/* Enumerated lists */
+ol li {
+    margin: 0px 20px;
+}
+
+/* Mermaid diagrams */
+.mermaid {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Modal backdrop blur */
+.modal-container {
+    backdrop-filter: blur(10px);
+}
+
+/* Images */
+img[alt*="center"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    opacity: 0.9;
+    border-radius: 10px;
+    transition: opacity var(--opacity-transition-duration) ease-in-out,
+        transform .2s ease-in-out;
+}
+
+img:hover {
+    opacity: 1;
+    transform: scale(1.01);
+}
+
+/* Prevent image width override in markdown only */
+.markdown-preview-view img:not([width]),
+.markdown-source-view img:not([width]) {
+    width: auto !important;
+}@import "variables.css";
+
+:root body {
+    --code-normal: #b7c2e0;
+    --code-comment: #6e738d;
+    --code-function: #8aadf4;
+    --code-important: #ee99a0;
+    --code-keyword: #c6a0f6;
+    --code-operator: #8bd5ca;
+    --code-property: #8aadf4;
+    --code-punctuation: #f5a97f;
+    --code-string: #a6da95;
+    --code-tag: #8aadf4;
+    --code-value: #c6a0f6;
+
+    --code-background: rgb(11, 12, 14);
+    --code-block-border: rgb(38, 38, 40);
+    --code-inline-background: color-mix(in srgb,
+            white 5%,
+            var(--code-background) 95%);
+}
+
+/* --- Inline code --- */
+.markdown-preview-view code:not(pre code),
+.cm-s-obsidian span.cm-inline-code {
+    background: var(--code-inline-background) !important;
+    border: 2px solid var(--code-block-border) !important;
+    padding: 0.1em 0.35em;
+    font-size: 0.9em;
+}
+
+/* --- Block code: Reading + Editing --- */
+.markdown-preview-view pre,
+.cm-s-obsidian pre.HyperMD-codeblock {
+    background: var(--code-background) !important;
+    border: 0.75px solid var(--code-block-border) !important;
+    padding: 0.75em 1em;
+    font-size: var(--code-font-size);
+    box-shadow:
+        inset 0 1px 0 #11111b,
+        inset 0 -1px 0 #11111b;
+}@import "variables.css";
+
+
+:root body {
+    --folder-color: hsl(258, 60%, 60%);
+    --z0-color: var(--text-muted);
+    --z99-color: var(--text-faint);
+}
+
+/* ============== ALL FOLDER TITLES ============== */
+.nav-folder-title {
+    font-weight: bold;
+}
+
+.nav-folder-title:hover {
+    font-weight: bold !important;
+}
+
+/* ============== ALL FILE TITLES ============== */
+.nav-file-title {
+    font-size: var(--folder-nav-font-size);
+    color: var(--default-text-color);
+}
+
+.nav-file-title:hover {
+    font-weight: bold;
+    color: var(--default-text-color);
+}
+
+.nav-file-title.is-active,
+.nav-file-title.is-active:hover {
+    color: var(--text-accent);
+}
+
+.nav-folder-title[data-path^="00"] {
+    color: var(--z0-color);
+    --nav-item-color-hover: var(--z0-color);
+}
+
+.nav-folder-title[data-path^="99"] {
+    color: var(--z99-color);
+    --nav-item-color-hover: var(--z99-color);
+}
+
+.nav-folder-title[data-path^="01"],
+.nav-folder-title[data-path^="02"],
+.nav-folder-title[data-path^="03"],
+.nav-folder-title[data-path^="04"],
+.nav-folder-title[data-path^="05"],
+.nav-folder-title[data-path^="06"],
+.nav-folder-title[data-path^="07"] {
+    color: var(--folder-color);
+    --nav-item-color-hover: var(--folder-color);
+}/* =================================================================== */
+/* THEME VARIABLES — single source of truth for all custom theming     */
+/* =================================================================== */
+
+:root body {
+
+    /* ============== GLOBAL VARIABLES ============== */
+    --background-primary: rgb(14, 14, 16);
+    --background-secondary: rgb(8, 8, 10);
+
+    --text-normal: hsl(0, 0%, 75%);
+    --text-muted: hsl(0, 0%, 70%);
+    --text-faint: hsl(0, 0%, 60%);
+
+    --text-accent: hsl(215, 75%, 70%) !important;
+    --formatted-text-color: hsl(22, 48%, 58%);
+
+    /* ============== DERIVED VARIABLES ============== */
+    --background-primary-alt: color-mix(in srgb,
+            var(--text-accent) 4%,
+            var(--background-primary) 96%) !important;
+    --background-secondary-alt: var(--background-secondary) !important;
+    --background-modifier-hover: color-mix(in srgb,
+            var(--text-accent) 10%,
+            var(--background-primary) 90%) !important;
+    --background-modifier-border-hover: color-mix(in srgb,
+            var(--text-accent) 16%,
+            var(--background-primary) 84%) !important;
+    --background-modifier-border: var(--background-secondary) !important;
+    --background-modifier-border-focus: var(--background-modifier-border-hover) !important;
+    --background-modifier-form-field: var(--background-modifier-hover) !important;
+
+    /* ============== TEXT COLORS ============== */
+    --text-accent-hover: color-mix(in srgb,
+            var(--text-accent) 70%,
+            white 30%);
+
+    --text-highlight-bg: color-mix(in srgb,
+            var(--background-secondary) 60%,
+            var(--formatted-text-color) 40%);
+
+    /* ============== TYPOGRAPHY ============== */
+    --font-text-theme: SN Pro;
+    --font-interface-theme: SN Pro;
+    --font-monospace-theme: JetBrainsMono NF;
+
+    --font-ui-smaller: calc(var(--font-text-size) - 4px);
+    --font-ui-small: calc(var(--font-text-size) - 2px);
+    --font-ui-medium: calc(var(--font-text-size));
+    --font-ui-large: calc(var(--font-text-size) + 2px);
+
+    --bold-color: var(--formatted-text-color);
+    --italic-color: var(--formatted-text-color);
+    --inline-title-color: var(--text-normal);
+    --h1-color: var(--text-normal);
+    --h2-color: var(--text-normal);
+    --h3-color: var(--text-normal);
+    --h4-color: var(--text-normal);
+    --h5-color: var(--text-normal);
+    --h6-color: var(--text-normal);
+
+    /* ============== UI ELEMENTS ============== */
+
+    /* buttons */
+    --interactive-normal: var(--background-modifier-hover) !important;
+    --interactive-hover: var(--background-modifier-border-hover) !important;
+    --interactive-accent: color-mix(in srgb,
+            var(--text-accent) 80%,
+            var(--background-primary) 20%) !important;
+
+    /* radius */
+    --radius-s: 16px;
+    --button-radius: 16px;
+
+    /* checkbox */
+    --checkbox-color-hover: var(--text-accent-hover);
+    --checkbox-border-color: var(--text-faint);
+    --checkbox-border-color-hover: var(--text-normal);
+    --checklist-done-color: var(--text-faint);
+
+    /* tabs */
+    --tab-background-active: var(--background-modifier-hover);
+    --tab-divider-color: var(--background-secondary);
+    --tab-outline-color: var(--background-secondary);
+    --tab-curve: 0px;
+    --tab-radius: 10px;
+    --tab-radius-active: 10px;
+}

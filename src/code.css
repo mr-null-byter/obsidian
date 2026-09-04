@@ -1,0 +1,42 @@
+@import "variables.css";
+
+:root body {
+    --code-normal: #b7c2e0;
+    --code-comment: #6e738d;
+    --code-function: #8aadf4;
+    --code-important: #ee99a0;
+    --code-keyword: #c6a0f6;
+    --code-operator: #8bd5ca;
+    --code-property: #8aadf4;
+    --code-punctuation: #f5a97f;
+    --code-string: #a6da95;
+    --code-tag: #8aadf4;
+    --code-value: #c6a0f6;
+
+    --code-background: rgb(11, 12, 14);
+    --code-block-border: rgb(38, 38, 40);
+    --code-inline-background: color-mix(in srgb,
+            white 5%,
+            var(--code-background) 95%);
+}
+
+/* --- Inline code --- */
+.markdown-preview-view code:not(pre code),
+.cm-s-obsidian span.cm-inline-code {
+    background: var(--code-inline-background) !important;
+    border: 2px solid var(--code-block-border) !important;
+    padding: 0.1em 0.35em;
+    font-size: 0.9em;
+}
+
+/* --- Block code: Reading + Editing --- */
+.markdown-preview-view pre,
+.cm-s-obsidian pre.HyperMD-codeblock {
+    background: var(--code-background) !important;
+    border: 0.75px solid var(--code-block-border) !important;
+    padding: 0.75em 1em;
+    font-size: var(--code-font-size);
+    box-shadow:
+        inset 0 1px 0 #11111b,
+        inset 0 -1px 0 #11111b;
+}
