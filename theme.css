@@ -186,7 +186,7 @@ img:hover {
     --background-modifier-border-hover: color-mix(in srgb,
             var(--text-accent) 16%,
             var(--background-primary) 84%) !important;
-    --background-modifier-border: var(--background-secondary) !important;
+    --background-modifier-border: var(--background-primary) !important;
     --background-modifier-border-focus: var(--background-modifier-border-hover) !important;
     --background-modifier-form-field: var(--background-modifier-hover) !important;
 
