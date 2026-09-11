@@ -10,6 +10,7 @@
 /* ============== ALL FOLDER TITLES ============== */
 .nav-folder-title {
     font-weight: bold;
+    font-size: var(--font-text-size);
 }
 
 .nav-folder-title:hover {
@@ -18,13 +19,11 @@
 
 /* ============== ALL FILE TITLES ============== */
 .nav-file-title {
-    font-size: var(--folder-nav-font-size);
-    color: var(--default-text-color);
+    font-size: var(--font-text-size);
 }
 
 .nav-file-title:hover {
     font-weight: bold;
-    color: var(--default-text-color);
 }
 
 .nav-file-title.is-active,
