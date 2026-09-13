@@ -69,15 +69,15 @@ img:hover {
 :root body {
     --code-normal: var(--text-muted);
     --code-comment: #6e738d;
-    --code-function: #8aadf4;
-    --code-important: #ee99a0;
-    --code-keyword: #c6a0f6;
-    --code-operator: #8bd5ca;
-    --code-property: #8aadf4;
-    --code-punctuation: #f5a97f;
-    --code-string: #a6da95;
-    --code-tag: #8aadf4;
-    --code-value: #c6a0f6;
+    --code-function: #4385BE;
+    --code-important: #D14D41;
+    --code-keyword: #8B7EC8;
+    --code-operator: #3AA99F;
+    --code-property: #4385BE;
+    --code-punctuation: #DA702C;
+    --code-string: #879A39;
+    --code-tag: #4385BE;
+    --code-value: #D0A215;
 
     --code-background: rgb(11, 12, 14);
     --code-inline-background: rgba(255, 255, 255, 0.08);
@@ -110,7 +110,7 @@ img:hover {
 
 
 :root body {
-    --folder-color: hsl(258, 60%, 60%);
+    --folder-color: rgb(123, 93, 207);
     --z0-color: var(--text-muted);
     --z99-color: var(--text-faint);
 }
@@ -245,4 +245,7 @@ img:hover {
     --tab-curve: 0px;
     --tab-radius: 10px;
     --tab-radius-active: 10px;
+
+    /* callouts */
+    --callout-border-width: 0.5px;
 }
