@@ -2,7 +2,7 @@
 
 
 :root body {
-    --folder-color: hsl(258, 60%, 60%);
+    --folder-color: rgb(123, 93, 207);
     --z0-color: var(--text-muted);
     --z99-color: var(--text-faint);
 }
