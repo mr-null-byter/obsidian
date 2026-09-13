@@ -85,4 +85,7 @@
     --tab-curve: 0px;
     --tab-radius: 10px;
     --tab-radius-active: 10px;
+
+    /* callouts */
+    --callout-border-width: 0.5px;
 }
